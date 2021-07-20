@@ -1,0 +1,4 @@
+{
+  "mongo_uri": "book_MONGO_URI",
+  "jwtPrivateKey": "book_JWT_PKEY"
+}
