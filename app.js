@@ -1,6 +1,7 @@
 const winston = require("winston");
 const express = require("express");
 const app = express();
+const cors = require("cors");
 
 // defining a templating engine to return html markup to the client instead of json. Not really needed for a restful API but I'll use it for the "/" endpoint for quick reference documentation
 app.set("view engine", "pug");
@@ -10,6 +11,7 @@ app.set("views", "./views"); //this is the default
 
 // bug: Logging (winston) isnt logging errors on app startup, but does log properly after then (eg 500 route errors)
 // using throw new Error("oops");
+app.use(cors);
 require("./startup/logging")();
 require("./startup/routes")(app);
 require("./startup/database")();
