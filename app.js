@@ -11,7 +11,7 @@ app.set("views", "./views"); //this is the default
 
 // bug: Logging (winston) isnt logging errors on app startup, but does log properly after then (eg 500 route errors)
 // using throw new Error("oops");
-app.use(cors);
+app.use(cors());
 require("./startup/logging")();
 require("./startup/routes")(app);
 require("./startup/database")();
