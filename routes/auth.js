@@ -60,7 +60,7 @@ router.post(
     // grab the user to generate a new jwt with the header parameter set for the selected restaurant.
 
     const user = await User.findById(req.user._id).populate("restaurants");
-    const token = user.generateAuthToken(req.params.restId);
+    const token = user.generateAuthToken(restaurant);
 
     res.send(token);
   })
