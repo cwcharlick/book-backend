@@ -45,8 +45,9 @@ router.post(
     // check if their jwt has access to this restaurant. If it doesnt we return 404 not found rather than 403 forbidden so this end point cannot be used to check for valid ids.
 
     if (
-      !req.user.restaurants.includes(req.params.restId) &&
-      req.user.level !== "super_admin"
+      (req.user.restaurants.filter(
+        (rest) => rest.id === req.params.restId
+      ).length = 0 && req.user.level !== "super_admin")
     )
       return res.status(404).send("Restaurant for given id not found.");
 
@@ -58,7 +59,7 @@ router.post(
 
     // grab the user to generate a new jwt with the header parameter set for the selected restaurant.
 
-    const user = await User.findById(req.user._id);
+    const user = await User.findById(req.user._id).populate("restaurants");
     const token = user.generateAuthToken(req.params.restId);
 
     res.send(token);
