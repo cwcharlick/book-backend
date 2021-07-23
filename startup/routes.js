@@ -10,6 +10,7 @@ const debug = require("debug")("app:startup:routes");
 const tags = require("../routes/tags");
 const statuses = require("../routes/statuses");
 const tablesSchedules = require("../routes/tablesschedules");
+const servicesPacings = require("../routes/servicespacings");
 
 module.exports = function (app) {
   app.use(express.json()); // sets req.body to json object
@@ -28,6 +29,7 @@ module.exports = function (app) {
   app.use("/api/tags", tags);
   app.use("/api/statuses", statuses);
   app.use("/api/tablesschedules", tablesSchedules);
+  app.use("/api/servicespacings", servicesPacings);
   app.use("/", home);
 
   // catch any 500 errors
