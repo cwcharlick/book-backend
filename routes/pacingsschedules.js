@@ -2,7 +2,7 @@ const auth = require("../middleware/auth");
 const {
   PacingsSchedule,
   validatePacingsSchedule,
-} = require("../models/pacingsSchedule.js");
+} = require("../models/pacingsschedule.js");
 const express = require("express");
 const router = express.Router();
 const addTryCatch = require("../middleware/async");

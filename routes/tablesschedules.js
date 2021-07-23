@@ -2,7 +2,7 @@ const auth = require("../middleware/auth");
 const {
   TablesSchedule,
   validateTablesSchedule,
-} = require("../models/tablesSchedule.js");
+} = require("../models/tablesschedule.js");
 const express = require("express");
 const router = express.Router();
 const addTryCatch = require("../middleware/async");
