@@ -7,6 +7,7 @@ const restaurants = require("../routes/restaurants");
 const users = require("../routes/users");
 const home = require("../routes/home");
 const debug = require("debug")("app:startup:routes");
+const tags = require("../routes/tags");
 
 module.exports = function (app) {
   app.use(express.json()); // sets req.body to json object
@@ -22,6 +23,7 @@ module.exports = function (app) {
   app.use("/api/restaurants", restaurants);
   app.use("/api/users", users);
   app.use("/api/auth", auth);
+  app.use("/api/tags", tags);
   app.use("/", home);
 
   // catch any 500 errors
