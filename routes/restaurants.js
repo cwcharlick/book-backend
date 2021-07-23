@@ -24,7 +24,7 @@ router.post(
   })
 );
 
-// also probably need router.get("/:id", auth, ...); when there is more info in the restaurant documents
+// also probably need router.get("/me") when there is more info in restaurants
 
 router.get(
   "/",
