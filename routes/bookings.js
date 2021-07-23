@@ -17,6 +17,7 @@ const mongoose = require("mongoose");
 // Joi schema needs expanding.
 // Mongoose model is just OK. Some good examples in there, could easily be expanded.
 
+//update
 router.put(
   "/:id",
   auth,
@@ -37,7 +38,7 @@ router.put(
 
     const booking = await Booking.findOne({
       _id: req.params.id,
-      restaurant: { _id: req.user.selectedRestaurant },
+      restaurant: { _id: req.user.selectedRestaurant._id },
     });
     if (!booking)
       return res.status(404).send("Booking with supplied Id not found");
@@ -59,7 +60,7 @@ router.get(
   auth,
   addTryCatch(async (req, res) => {
     const bookings = await Booking.find({
-      restaurant: { _id: req.user.selectedRestaurant },
+      restaurant: { _id: req.user.selectedRestaurant._id },
     }).populate("restaurant", "name");
 
     res.send(bookings);
@@ -75,7 +76,7 @@ router.get(
 
     const booking = await Booking.findOne({
       _id: req.params.id,
-      restaurant: { _id: req.user.selectedRestaurant },
+      restaurant: { _id: req.user.selectedRestaurant._id },
     });
 
     if (!booking)
@@ -85,6 +86,7 @@ router.get(
   })
 );
 
+//update
 router.post(
   "/",
   auth,
