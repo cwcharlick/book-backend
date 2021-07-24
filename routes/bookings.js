@@ -99,7 +99,7 @@ router.post(
       time: req.body.time,
       table: req.body.table,
       phone: req.body.phone,
-      email: re.body.email,
+      email: req.body.email,
       name: req.body.name,
       covers: req.body.covers,
       date: req.body.date,
