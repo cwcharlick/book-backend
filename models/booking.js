@@ -91,7 +91,7 @@ function validateBooking(booking) {
     time: Joi.number(),
     table: Joi.array(),
     phone: Joi.string(),
-    email: Joi.string(),
+    email: Joi.string().allow(""),
     name: Joi.string().min(3).required(),
     covers: Joi.number(),
     date: Joi.date(),
@@ -107,7 +107,7 @@ function validateBooking(booking) {
     phase: Joi.number(),
     statusesDefault: Joi.boolean(),
     status_changed: Joi.boolean(),
-    description: Joi.string(),
+    description: Joi.string().allow(""),
     tags: Joi.array(),
     history: Joi.array(),
   });
