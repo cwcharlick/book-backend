@@ -94,13 +94,6 @@ router.post(
     const { error } = validateBooking(req.body);
     if (error) return res.status(400).send(error.details[0].message);
 
-    // make sure user is posting to restaurant their jwt currently has selected
-    if (req.body.restaurant !== req.user.selectedRestaurant)
-      return res
-        .status(401)
-        .send("Unauthorised to post to restaurant with given id.");
-    // hard coded a bunch of example booking data so you only need to send a name to test it.
-
     const booking = new Booking({
       restaurant: req.user.selectedRestaurant._id,
       time: req.body.time,
