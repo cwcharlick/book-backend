@@ -35,7 +35,7 @@ const bookingSchema = new Schema(
       },
     },
     phone: { type: String, default: "", required: true },
-    email: { type: String, default: "", required: true },
+    email: { type: String, default: "" },
     name: {
       type: String,
       minlength: 3,
@@ -68,7 +68,7 @@ const bookingSchema = new Schema(
     phase: { type: Number, required: true },
     statusesDefault: { type: Boolean, default: true, required: true },
     status_changed: { type: Boolean, default: false, required: true },
-    description: { type: String, default: "", required: true },
+    description: { type: String, default: "" },
     tags: { type: [ObjectId], default: [], required: true },
     history: {
       type: [{ statusId: ObjectId, date: Date }],
