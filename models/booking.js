@@ -92,8 +92,29 @@ const Booking = mongoose.model("Booking", bookingSchema);
 
 function validateBooking(booking) {
   const schema = Joi.object({
-    name: Joi.string().min(3).required(),
     restaurant: Joi.objectId(),
+    time: Joi.number(),
+    table: Joi.array(),
+    phone: Joi.string(),
+    email: Joi.string(),
+    name: Joi.string().min(3).required(),
+    covers: Joi.number(),
+    date: Joi.date(),
+    default_turntime: Joi.boolean(),
+    turntime: Joi.number(),
+    end_time: Joi.number(),
+    projected_end_time: Joi.number(),
+    usable_end_time: Joi.number(),
+    manual_end_time: Joi.number(),
+    table_assigned: Joi.boolean(),
+    statusesId: Joi.objectId(),
+    statusId: Joi.objectId(),
+    phase: Joi.number(),
+    statusesDefault: Joi.boolean(),
+    status_changed: Joi.boolean(),
+    description: Joi.string(),
+    tags: Joi.array(),
+    history: Joi.array(),
   });
 
   return schema.validate(booking);
