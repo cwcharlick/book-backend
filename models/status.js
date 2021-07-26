@@ -17,7 +17,7 @@ const statusSchema = new Schema({
       active: Number,
       name: String,
       icon: String,
-      turnTimetotal: [{ tableSize: Number, time: Number }],
+      timeLeft: [{ tableSize: Number, time: Number }],
     },
   ],
 });
