@@ -11,7 +11,15 @@ const statusSchema = new Schema({
   name: String,
   useAdvancedTurns: Boolean,
   turnTimeTotal: [{ tableSize: Number, time: Number }],
-  list: [{ phase: Number, active: Number, name: String, icon: String }],
+  list: [
+    {
+      phase: Number,
+      active: Number,
+      name: String,
+      icon: String,
+      turnTimetotal: [{ tableSize: Number, time: Number }],
+    },
+  ],
 });
 
 const Status = mongoose.model("Status", statusSchema);
