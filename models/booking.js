@@ -67,7 +67,7 @@ const bookingSchema = new Schema(
     statusId: { type: ObjectId, required: true },
     phase: { type: Number, required: true },
     statusesDefault: { type: Boolean, default: true, required: true },
-    status_changed: { type: Boolean, default: false, required: true },
+    status_changed: { type: Date, default: null },
     description: { type: String, default: "" },
     tags: { type: [ObjectId], default: [], required: true },
     history: {
@@ -106,7 +106,7 @@ function validateBooking(booking) {
     statusId: Joi.objectId(),
     phase: Joi.number(),
     statusesDefault: Joi.boolean(),
-    status_changed: Joi.boolean(),
+    status_changed: Joi.date().allow(null),
     description: Joi.string().allow(""),
     tags: Joi.array(),
     history: Joi.array(),
