@@ -45,7 +45,28 @@ router.put(
 
     // update booking
 
+    booking.time = req.body.time;
+    booking.table = req.body.table;
+    booking.phone = req.body.phone;
+    booking.email = req.body.email;
     booking.name = req.body.name;
+    booking.covers = req.body.covers;
+    booking.date = req.body.date;
+    booking.default_turntime = req.body.default_turntime;
+    booking.turntime = req.body.turntime;
+    booking.end_time = req.body.end_time;
+    booking.projected_end_time = req.body.projected_end_time;
+    booking.usable_end_time = req.body.usable_end_time;
+    booking.manual_end_time = req.body.manual_end_time;
+    booking.table_assigned = req.body.table_assigned;
+    booking.statusesId = req.body.statusesId;
+    booking.statusId = req.body.statusId;
+    booking.phase = req.body.phase;
+    booking.statusesDefault = req.body.statusesDefault;
+    booking.status_changed = req.body.status_changed;
+    booking.description = req.body.description;
+    booking.tags = req.body.tags;
+    booking.history = req.body.history;
 
     await booking.save();
 
@@ -61,7 +82,7 @@ router.get(
   addTryCatch(async (req, res) => {
     const bookings = await Booking.find({
       restaurant: { _id: req.user.selectedRestaurant._id },
-    }).populate("restaurant", "name");
+    });
 
     res.send(bookings);
   })
