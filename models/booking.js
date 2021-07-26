@@ -110,6 +110,9 @@ function validateBooking(booking) {
     description: Joi.string().allow(""),
     tags: Joi.array(),
     history: Joi.array(),
+    id: Joi.allow(),
+    _id: Joi.allow(),
+    __v: Joi.allow(),
   });
 
   return schema.validate(booking);

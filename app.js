@@ -21,7 +21,7 @@ require("./startup/prod")(app);
 // port to listen on. 3000 is default.
 //winston.error("test");
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 const server = app.listen(port, () => {
   winston.info(`Listening on port ${port}...`);
 });
