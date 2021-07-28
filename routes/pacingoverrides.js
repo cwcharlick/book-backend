@@ -2,7 +2,7 @@ const auth = require("../middleware/auth");
 const {
   PacingOverride,
   validatePacingOverride,
-} = require("../models/pacingOverride.js");
+} = require("../models/pacingoverride.js");
 const express = require("express");
 const router = express.Router();
 const addTryCatch = require("../middleware/async");

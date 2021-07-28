@@ -256,3 +256,13 @@
   level: 'info',
   timestamp: '2021-07-28 16:11:46'
 }
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-07-28 16:28:40'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-07-28 16:28:41'
+}
