@@ -13,6 +13,7 @@ const tablesSchedules = require("../routes/tablesschedules");
 const servicesPacings = require("../routes/servicespacings");
 const pacingsSchedules = require("../routes/pacingsschedules");
 const schedules = require("../routes/schedules");
+const pacingOverrides = require("../routes/pacingoverrides");
 
 module.exports = function (app) {
   app.use(express.json()); // sets req.body to json object
@@ -34,6 +35,7 @@ module.exports = function (app) {
   app.use("/api/servicespacings", servicesPacings);
   app.use("/api/pacingsschedules", pacingsSchedules);
   app.use("/api/schedules", schedules);
+  app.use("/api/pacingoverrides", pacingOverrides);
   app.use("/", home);
 
   // catch any 500 errors

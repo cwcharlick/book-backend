@@ -66,3 +66,193 @@
   level: 'info',
   timestamp: '2021-07-26 14:18:32'
 }
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-07-26 14:36:42'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-07-26 14:36:43'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-07-26 14:40:51'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-07-26 14:40:51'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-07-26 14:41:50'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-07-26 14:41:51'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-07-26 14:43:55'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-07-26 14:43:55'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-07-26 14:50:37'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-07-26 14:50:37'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-07-26 14:50:42'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-07-26 14:50:42'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-07-26 14:51:11'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-07-26 14:51:11'
+}
+{
+  errors: {
+    status_changed: CastError: Cast to Boolean failed for value "2021-07-26T13:47:56.768Z" (type string) at path "status_changed"
+        at SchemaBoolean.cast (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\schema\boolean.js:209:11)
+        at SchemaBoolean.SchemaType.applySetters (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\schematype.js:1123:12)
+        at model.$set (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\document.js:1287:20)
+        at model.set [as status_changed] (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\helpers\document\compile.js:179:19)
+        at C:\Users\cwcha\book-backend\routes\bookings.js:66:28
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async C:\Users\cwcha\book-backend\middleware\async.js:7:7 {
+      stringValue: '"2021-07-26T13:47:56.768Z"',
+      messageFormat: undefined,
+      kind: 'Boolean',
+      value: '2021-07-26T13:47:56.768Z',
+      path: 'status_changed',
+      reason: CastError: Cast to boolean failed for value "2021-07-26T13:47:56.768Z" (type string) at path "undefined"
+          at castBoolean (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\cast\boolean.js:28:9)
+          at SchemaBoolean.cast (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\schema\boolean.js:207:12)
+          at SchemaBoolean.SchemaType.applySetters (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\schematype.js:1123:12)
+          at model.$set (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\document.js:1287:20)
+          at model.set [as status_changed] (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\helpers\document\compile.js:179:19)
+          at C:\Users\cwcha\book-backend\routes\bookings.js:66:28
+          at processTicksAndRejections (internal/process/task_queues.js:95:5)
+          at async C:\Users\cwcha\book-backend\middleware\async.js:7:7 {
+        stringValue: '"2021-07-26T13:47:56.768Z"',
+        messageFormat: undefined,
+        kind: 'boolean',
+        value: '2021-07-26T13:47:56.768Z',
+        path: undefined,
+        reason: undefined,
+        valueType: 'string'
+      },
+      valueType: 'string'
+    }
+  },
+  _message: 'Booking validation failed',
+  level: 'error',
+  message: 'Booking validation failed: status_changed: Cast to Boolean failed for value "2021-07-26T13:47:56.768Z" (type string) at path "status_changed" Booking validation failed: status_changed: Cast to Boolean failed for value "2021-07-26T13:47:56.768Z" (type string) at path "status_changed"',
+  stack: 'ValidationError: Booking validation failed: status_changed: Cast to Boolean failed for value "2021-07-26T13:47:56.768Z" (type string) at path "status_changed"\n' +
+    '    at model.Document.invalidate (C:\\Users\\cwcha\\book-backend\\node_modules\\mongoose\\lib\\document.js:2760:32)\n' +
+    '    at model.$set (C:\\Users\\cwcha\\book-backend\\node_modules\\mongoose\\lib\\document.js:1327:12)\n' +
+    '    at model.set [as status_changed] (C:\\Users\\cwcha\\book-backend\\node_modules\\mongoose\\lib\\helpers\\document\\compile.js:179:19)\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\routes\\bookings.js:66:28\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n' +
+    '    at async C:\\Users\\cwcha\\book-backend\\middleware\\async.js:7:7',
+  timestamp: '2021-07-26 14:51:14'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-07-26 14:52:21'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-07-26 14:52:21'
+}
+{
+  service: 'user-service',
+  level: 'error',
+  message: 'Cannot overwrite `Tag` model once compiled. Cannot overwrite `Tag` model once compiled.',
+  stack: 'OverwriteModelError: Cannot overwrite `Tag` model once compiled.\n' +
+    '    at Mongoose.model (C:\\Users\\cwcha\\book-backend\\node_modules\\mongoose\\lib\\index.js:549:13)\n' +
+    '    at Object.<anonymous> (C:\\Users\\cwcha\\book-backend\\models\\pacingOverride.js:14:22)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:933:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:957:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\cwcha\\book-backend\\routes\\pacingoverrides.js:5:5)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:933:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:957:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\cwcha\\book-backend\\startup\\routes.js:16:25)',
+  timestamp: '2021-07-28 16:01:31'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-07-28 16:02:16'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-07-28 16:02:16'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-07-28 16:02:18'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-07-28 16:02:18'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-07-28 16:08:32'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-07-28 16:08:32'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-07-28 16:11:45'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-07-28 16:11:46'
+}
