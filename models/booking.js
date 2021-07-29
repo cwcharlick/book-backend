@@ -71,7 +71,7 @@ const bookingSchema = new Schema(
     description: { type: String, default: "" },
     tags: { type: [ObjectId], default: [], required: true },
     history: {
-      type: [{ statusId: ObjectId, date: Date }],
+      type: [{ statusId: ObjectId, date: Date, phase: Number }],
       default: [],
       required: true,
     },
