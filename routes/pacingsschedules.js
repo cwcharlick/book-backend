@@ -17,7 +17,7 @@ router.post(
     const pacingsSchedule = new PacingsSchedule({
       restaurant: req.user.selectedRestaurant._id,
       name: req.body.name,
-      servicesId: req.body.servicesId,
+      services: req.body.services,
       maxPacing: req.body.maxPacing,
       defaultPacing: req.body.defaultPacing,
       pacings: req.body.pacings,

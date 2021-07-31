@@ -7,7 +7,7 @@ const ObjectId = Schema.ObjectId;
 const pacingsScheduleSchema = new Schema({
   restaurant: { type: ObjectId, ref: "Restaurant", required: true },
   name: String,
-  servicesId: ObjectId,
+  services: Array,
   maxPacing: Number,
   defaultPacing: Number,
   pacings: [{ time: Number, max: Number, booked: Number }],
@@ -21,11 +21,13 @@ const PacingsSchedule = mongoose.model(
 function validatePacingsSchedule(pacingsSchedule) {
   const schema = Joi.object({
     restaurant: Joi.objectId(),
-    name: Joi.string(),
-    servicesId: Joi.objectId(),
-    maxPacing: Joi.number(),
-    defaultPacing: Joi.number(),
-    pacings: Joi.array(),
+    name: Joi.string().required(),
+    services: Joi.array().required(),
+    maxPacing: Joi.number().required(),
+    defaultPacing: Joi.number().required(),
+    pacings: Joi.array().required(),
+    _id: Joi.allow(),
+    __v: Joi.allow(),
   });
 
   return schema.validate(pacingsSchedule);

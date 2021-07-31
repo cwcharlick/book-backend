@@ -363,3 +363,277 @@
   level: 'info',
   timestamp: '2021-07-31 11:37:54'
 }
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-07-31 14:58:32'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-07-31 14:58:32'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-07-31 15:00:25'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-07-31 15:00:25'
+}
+{
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\r\n' +
+    '        "services": [\r\n' +
+    '            {\r\n' +
+    '                "name": "Lunch",\r\n' +
+    '                "time": null\r\n' +
+    '            },\r\n' +
+    '            {\r\n' +
+    '                "name": "Dinner",\r\n' +
+    '                "time": 1630\r\n' +
+    '            }\r\n' +
+    '        ],\r\n' +
+    '        "_id": "60fad5856cba683e3cd905b7",\r\n' +
+    '        "restaurant": "60f0356c0a69b22e6c45b7e7",\r\n' +
+    '        "name": "Default",\r\n' +
+    '        "maxPacing": 13,\r\n' +
+    '        "defaultPacing": 6,\r\n' +
+    '        "pacings": [\r\n' +
+    '            {\r\n' +
+    '                "_id": "60fad5856cba683e3cd905b8",\r\n' +
+    '                "time": 1200,\r\n' +
+    '                "max": 8,\r\n' +
+    '                "booked": 0\r\n' +
+    '            },\r\n' +
+    '            {\r\n' +
+    '                "_id": "60fad5856cba683e3cd905b9",\r\n' +
+    '                "time": 1230,\r\n' +
+    '                "max": 10,\r\n' +
+    '                "booked": 0\r\n' +
+    '            },\r\n' +
+    '            {\r\n' +
+    '                "_id": "60fad5856cba683e3cd905ba",\r\n' +
+    '                "time": 1300,\r\n' +
+    '                "max": 6,\r\n' +
+    '                "booked": 0\r\n' +
+    '            },\r\n' +
+    '            {\r\n' +
+    '                "_id": "60fad5856cba683e3cd905bb",\r\n' +
+    '                "time": 1330,\r\n' +
+    '                "max": 6,\r\n' +
+    '                "booked": 0\r\n' +
+    '            },\r\n' +
+    '            {\r\n' +
+    '                "_id": "60fad5856cba683e3cd905bc",\r\n' +
+    '                "time": 1400,\r\n' +
+    '                "max": 6,\r\n' +
+    '                "booked": 0\r\n' +
+    '            },\r\n' +
+    '            {\r\n' +
+    '                "_id": "60fad5856cba683e3cd905bd",\r\n' +
+    '                "time": 1430,\r\n' +
+    '                "max": 6,\r\n' +
+    '                "booked": 0\r\n' +
+    '            },\r\n' +
+    '            {\r\n' +
+    '                "_id": "60fad5856cba683e3cd905be",\r\n' +
+    '                "time": 1800,\r\n' +
+    '                "max": 6,\r\n' +
+    '                "booked": 0\r\n' +
+    '            },\r\n' +
+    '            {\r\n' +
+    '                "_id": "60fad5856cba683e3cd905bf",\r\n' +
+    '                "time": 1830,\r\n' +
+    '                "max": 6,\r\n' +
+    '                "booked": 0\r\n' +
+    '            },\r\n' +
+    '            {\r\n' +
+    '                "_id": "60fad5856cba683e3cd905c0",\r\n' +
+    '                "time": 1900,\r\n' +
+    '                "max": 6,\r\n' +
+    '                "booked": 0\r\n' +
+    '            },\r\n' +
+    '            {\r\n' +
+    '                "_id": "60fad5856cba683e3cd905c1",\r\n' +
+    '                "time": 1930,\r\n' +
+    '                "max": 6,\r\n' +
+    '                "booked": 0\r\n' +
+    '            },\r\n' +
+    '            {\r\n' +
+    '                "_id": "60fad5856cba683e3cd905c2",\r\n' +
+    '                "time": 2000,\r\n' +
+    '                "max": 6,\r\n' +
+    '                "booked": 0\r\n' +
+    '            },\r\n' +
+    '            {\r\n' +
+    '                "_id": "60fad5856cba683e3cd905c3",\r\n' +
+    '                "time": 2030,\r\n' +
+    '                "max": 6,\r\n' +
+    '                "booked": 0\r\n' +
+    '            }\r\n' +
+    '        ],\r\n' +
+    '        "__v": 0,\r\n' +
+    '    }',
+  type: 'entity.parse.failed',
+  level: 'error',
+  message: 'Unexpected token } in JSON at position 2503 Unexpected token } in JSON at position 2503',
+  stack: 'SyntaxError: Unexpected token } in JSON at position 2503\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at parse (C:\\Users\\cwcha\\book-backend\\node_modules\\body-parser\\lib\\types\\json.js:89:19)\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\node_modules\\body-parser\\lib\\read.js:121:18\n' +
+    '    at invokeCallback (C:\\Users\\cwcha\\book-backend\\node_modules\\raw-body\\index.js:224:16)\n' +
+    '    at done (C:\\Users\\cwcha\\book-backend\\node_modules\\raw-body\\index.js:213:7)\n' +
+    '    at IncomingMessage.onEnd (C:\\Users\\cwcha\\book-backend\\node_modules\\raw-body\\index.js:273:7)\n' +
+    '    at IncomingMessage.emit (events.js:388:22)\n' +
+    '    at endReadableNT (internal/streams/readable.js:1336:12)\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:82:21)',
+  timestamp: '2021-07-31 15:03:01'
+}
+{
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '    {\r\n' +
+    '        "services": [\r\n' +
+    '            {\r\n' +
+    '                "name": "Lunch",\r\n' +
+    '                "time": null\r\n' +
+    '            },\r\n' +
+    '            {\r\n' +
+    '                "name": "Dinner",\r\n' +
+    '                "time": 1630\r\n' +
+    '            }\r\n' +
+    '        ],\r\n' +
+    '        "_id": "60fad5856cba683e3cd905b7",\r\n' +
+    '        "restaurant": "60f0356c0a69b22e6c45b7e7",\r\n' +
+    '        "name": "Default",\r\n' +
+    '        "maxPacing": 13,\r\n' +
+    '        "defaultPacing": 6,\r\n' +
+    '        "pacings": [\r\n' +
+    '            {\r\n' +
+    '                "_id": "60fad5856cba683e3cd905b8",\r\n' +
+    '                "time": 1200,\r\n' +
+    '                "max": 8,\r\n' +
+    '                "booked": 0\r\n' +
+    '            },\r\n' +
+    '            {\r\n' +
+    '                "_id": "60fad5856cba683e3cd905b9",\r\n' +
+    '                "time": 1230,\r\n' +
+    '                "max": 10,\r\n' +
+    '                "booked": 0\r\n' +
+    '            },\r\n' +
+    '            {\r\n' +
+    '                "_id": "60fad5856cba683e3cd905ba",\r\n' +
+    '                "time": 1300,\r\n' +
+    '                "max": 6,\r\n' +
+    '                "booked": 0\r\n' +
+    '            },\r\n' +
+    '            {\r\n' +
+    '                "_id": "60fad5856cba683e3cd905bb",\r\n' +
+    '                "time": 1330,\r\n' +
+    '                "max": 6,\r\n' +
+    '                "booked": 0\r\n' +
+    '            },\r\n' +
+    '            {\r\n' +
+    '                "_id": "60fad5856cba683e3cd905bc",\r\n' +
+    '                "time": 1400,\r\n' +
+    '                "max": 6,\r\n' +
+    '                "booked": 0\r\n' +
+    '            },\r\n' +
+    '            {\r\n' +
+    '                "_id": "60fad5856cba683e3cd905bd",\r\n' +
+    '                "time": 1430,\r\n' +
+    '                "max": 6,\r\n' +
+    '                "booked": 0\r\n' +
+    '            },\r\n' +
+    '            {\r\n' +
+    '                "_id": "60fad5856cba683e3cd905be",\r\n' +
+    '                "time": 1800,\r\n' +
+    '                "max": 6,\r\n' +
+    '                "booked": 0\r\n' +
+    '            },\r\n' +
+    '            {\r\n' +
+    '                "_id": "60fad5856cba683e3cd905bf",\r\n' +
+    '                "time": 1830,\r\n' +
+    '                "max": 6,\r\n' +
+    '                "booked": 0\r\n' +
+    '            },\r\n' +
+    '            {\r\n' +
+    '                "_id": "60fad5856cba683e3cd905c0",\r\n' +
+    '                "time": 1900,\r\n' +
+    '                "max": 6,\r\n' +
+    '                "booked": 0\r\n' +
+    '            },\r\n' +
+    '            {\r\n' +
+    '                "_id": "60fad5856cba683e3cd905c1",\r\n' +
+    '                "time": 1930,\r\n' +
+    '                "max": 6,\r\n' +
+    '                "booked": 0\r\n' +
+    '            },\r\n' +
+    '            {\r\n' +
+    '                "_id": "60fad5856cba683e3cd905c2",\r\n' +
+    '                "time": 2000,\r\n' +
+    '                "max": 6,\r\n' +
+    '                "booked": 0\r\n' +
+    '            },\r\n' +
+    '            {\r\n' +
+    '                "_id": "60fad5856cba683e3cd905c3",\r\n' +
+    '                "time": 2030,\r\n' +
+    '                "max": 6,\r\n' +
+    '                "booked": 0\r\n' +
+    '            }\r\n' +
+    '        ],\r\n' +
+    '        "__v": 0,\r\n' +
+    '    }',
+  type: 'entity.parse.failed',
+  level: 'error',
+  message: 'Unexpected token } in JSON at position 2507 Unexpected token } in JSON at position 2507',
+  stack: 'SyntaxError: Unexpected token } in JSON at position 2507\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at parse (C:\\Users\\cwcha\\book-backend\\node_modules\\body-parser\\lib\\types\\json.js:89:19)\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\node_modules\\body-parser\\lib\\read.js:121:18\n' +
+    '    at invokeCallback (C:\\Users\\cwcha\\book-backend\\node_modules\\raw-body\\index.js:224:16)\n' +
+    '    at done (C:\\Users\\cwcha\\book-backend\\node_modules\\raw-body\\index.js:213:7)\n' +
+    '    at IncomingMessage.onEnd (C:\\Users\\cwcha\\book-backend\\node_modules\\raw-body\\index.js:273:7)\n' +
+    '    at IncomingMessage.emit (events.js:388:22)\n' +
+    '    at endReadableNT (internal/streams/readable.js:1336:12)\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:82:21)',
+  timestamp: '2021-07-31 15:03:32'
+}
+{
+  level: 'error',
+  message: 'Joi.string(...).require is not a function Joi.string(...).require is not a function',
+  stack: 'TypeError: Joi.string(...).require is not a function\n' +
+    '    at validatePacingsSchedule (C:\\Users\\cwcha\\book-backend\\models\\pacingsschedule.js:24:24)\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\routes\\pacingsschedules.js:14:23\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\middleware\\async.js:7:13\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at auth (C:\\Users\\cwcha\\book-backend\\middleware\\auth.js:14:5)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\layer.js:95:5)',
+  timestamp: '2021-07-31 15:03:45'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-07-31 15:04:23'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-07-31 15:04:24'
+}
