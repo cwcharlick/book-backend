@@ -25,11 +25,13 @@ const Schedule = mongoose.model("Schedule", scheduleSchema);
 function validateSchedule(schedule) {
   const schema = Joi.object({
     restaurant: Joi.objectId(),
-    name: Joi.string(),
-    startDate: Joi.date().allow(null),
-    lastDate: Joi.date().allow(null),
-    length: Joi.number().allow(null),
-    days: Joi.array(),
+    name: Joi.string().required(),
+    startDate: Joi.date().allow(null).required(),
+    lastDate: Joi.date().allow(null).required(),
+    length: Joi.number().allow(null).required(),
+    days: Joi.array().required(),
+    _id: Joi.allow(),
+    __v: Joi.allow(),
   });
 
   return schema.validate(schedule);

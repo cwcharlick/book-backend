@@ -3,6 +3,7 @@ const { Schedule, validateSchedule } = require("../models/schedule.js");
 const express = require("express");
 const router = express.Router();
 const addTryCatch = require("../middleware/async");
+const mongoose = require("mongoose");
 
 router.post(
   "/",
@@ -21,6 +22,41 @@ router.post(
     });
 
     await schedule.save();
+
+    res.send(schedule);
+  })
+);
+
+router.put(
+  "/:id",
+  auth,
+  addTryCatch(async (req, res) => {
+    if (!mongoose.Types.ObjectId.isValid(req.params.id))
+      return res.status(400).send("Schedule Id invalid.");
+
+    const { error } = validateSchedule(req.body);
+    if (error) return res.status(400).send(error.details[0].message);
+
+    // look up course
+
+    const schedule = await Schedule.findOne({
+      _id: req.params.id,
+      restaurant: { _id: req.user.selectedRestaurant._id },
+    });
+    if (!schedule)
+      return res.status(404).send("Schedule with supplied Id not found");
+
+    // update booking
+
+    schedule.name = req.body.name;
+    schedule.startDate = req.body.startDate;
+    schedule.lastDate = req.body.lastDate;
+    schedule.length = req.body.length;
+    schedule.days = req.body.days;
+
+    await schedule.save();
+
+    // send result
 
     res.send(schedule);
   })
