@@ -21,8 +21,10 @@ const TablesSchedule = mongoose.model("TablesSchedule", tablesScheduleSchema);
 function validateTablesSchedule(tablesSchedule) {
   const schema = Joi.object({
     restaurant: Joi.objectId(),
-    name: Joi.string(),
-    tables: Joi.array(),
+    name: Joi.string().required(),
+    tables: Joi.array().required(),
+    _id: Joi.allow(),
+    __v: Joi.allow(),
   });
 
   return schema.validate(tablesSchedule);
