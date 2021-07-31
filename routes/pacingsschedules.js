@@ -6,6 +6,7 @@ const {
 const express = require("express");
 const router = express.Router();
 const addTryCatch = require("../middleware/async");
+const mongoose = require("mongoose");
 
 router.post(
   "/",
@@ -29,7 +30,36 @@ router.post(
   })
 );
 
-// also probably need router.get("/me") when there is more info in restaurants
+router.put(
+  "/:id",
+  auth,
+  addTryCatch(async (req, res) => {
+    if (!mongoose.Types.ObjectId.isValid(req.params.id))
+      return res.status(400).send("PacingsSchedule Id invalid.");
+
+    const { error } = validatePacingsSchedule(req.body);
+    if (error) return res.status(400).send(error.details[0].message);
+
+    const pacingsSchedule = await PacingsSchedule.findOne({
+      _id: req.params.id,
+      restaurant: { _id: req.user.selectedRestaurant._id },
+    });
+    if (!pacingsSchedule)
+      return res.status(404).send("PacingsSchedule with supplied Id not found");
+
+    pacingsSchedule.name = req.body.name;
+    pacingsSchedule.services = req.body.services;
+    pacingsSchedule.maxPacing = req.body.maxPacing;
+    pacingsSchedule.defaultPacing = req.body.defaultPacing;
+    pacingsSchedule.pacings = req.body.pacings;
+
+    await pacingsSchedule.save();
+
+    // send result
+
+    res.send(pacingsSchedule);
+  })
+);
 
 router.get(
   "/",
