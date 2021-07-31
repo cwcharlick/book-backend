@@ -32,7 +32,7 @@ module.exports = function (app) {
   app.use("/api/tags", tags);
   app.use("/api/statuses", statuses);
   app.use("/api/tablesschedules", tablesSchedules);
-  app.use("/api/servicespacings", servicesPacings);
+  //app.use("/api/servicespacings", servicesPacings);
   app.use("/api/pacingsschedules", pacingsSchedules);
   app.use("/api/schedules", schedules);
   app.use("/api/pacingoverrides", pacingOverrides);

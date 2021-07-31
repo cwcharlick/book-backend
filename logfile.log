@@ -689,3 +689,64 @@
   level: 'info',
   timestamp: '2021-07-31 16:35:26'
 }
+{
+  service: 'user-service',
+  level: 'error',
+  message: 'Router.use() requires a middleware function but got a Object Router.use() requires a middleware function but got a Object',
+  stack: 'TypeError: Router.use() requires a middleware function but got a Object\n' +
+    '    at Function.use (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:458:13)\n' +
+    '    at Function.<anonymous> (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\application.js:220:21)\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at Function.use (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\application.js:217:7)\n' +
+    '    at module.exports (C:\\Users\\cwcha\\book-backend\\startup\\routes.js:35:7)\n' +
+    '    at Object.<anonymous> (C:\\Users\\cwcha\\book-backend\\app.js:16:28)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:933:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)\n' +
+    '    at internal/main/run_main_module.js:17:47',
+  timestamp: '2021-07-31 21:54:06'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-07-31 21:54:50'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-07-31 21:54:51'
+}
+{
+  level: 'error',
+  message: 'mongoose is not defined mongoose is not defined',
+  stack: 'ReferenceError: mongoose is not defined\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\routes\\tablesschedules.js:33:5\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\middleware\\async.js:7:13\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at auth (C:\\Users\\cwcha\\book-backend\\middleware\\auth.js:14:5)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at param (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:354:14)\n' +
+    '    at param (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:365:14)\n' +
+    '    at Function.process_params (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:410:3)\n' +
+    '    at next (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:47:12)',
+  timestamp: '2021-07-31 21:56:18'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-07-31 21:56:46'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-07-31 21:56:46'
+}
