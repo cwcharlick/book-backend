@@ -35,4 +35,13 @@ router.get(
   })
 );
 
+router.get(
+  "/public/:slug",
+  addTryCatch(async (req, res) => {
+    const restaurant = await Restaurant.findOne({ slug: req.params.slug });
+    if (!restaurant) return res.status(404).send("Restaurant not found!");
+    res.send(restaurant._id);
+  })
+);
+
 module.exports = router;

@@ -750,3 +750,284 @@
   level: 'info',
   timestamp: '2021-07-31 21:56:46'
 }
+{
+  service: 'user-service',
+  level: 'error',
+  message: 'Configuration property "mongo_uri" is not defined Configuration property "mongo_uri" is not defined',
+  stack: 'Error: Configuration property "mongo_uri" is not defined\n' +
+    '    at Config.get (C:\\Users\\cwcha\\book-backend\\node_modules\\config\\lib\\config.js:182:11)\n' +
+    '    at module.exports (C:\\Users\\cwcha\\book-backend\\startup\\database.js:9:22)\n' +
+    '    at Object.<anonymous> (C:\\Users\\cwcha\\book-backend\\app.js:17:30)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:933:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)\n' +
+    '    at internal/main/run_main_module.js:17:47',
+  timestamp: '2021-08-02 15:51:16'
+}
+{
+  service: 'user-service',
+  level: 'error',
+  message: 'Configuration property "mongo_uri" is not defined Configuration property "mongo_uri" is not defined',
+  stack: 'Error: Configuration property "mongo_uri" is not defined\n' +
+    '    at Config.get (C:\\Users\\cwcha\\book-backend\\node_modules\\config\\lib\\config.js:182:11)\n' +
+    '    at module.exports (C:\\Users\\cwcha\\book-backend\\startup\\database.js:9:22)\n' +
+    '    at Object.<anonymous> (C:\\Users\\cwcha\\book-backend\\app.js:17:30)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:933:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)\n' +
+    '    at internal/main/run_main_module.js:17:47',
+  timestamp: '2021-08-02 15:53:47'
+}
+{
+  service: 'user-service',
+  level: 'error',
+  message: 'Configuration property "mongo_uri" is not defined Configuration property "mongo_uri" is not defined',
+  stack: 'Error: Configuration property "mongo_uri" is not defined\n' +
+    '    at Config.get (C:\\Users\\cwcha\\book-backend\\node_modules\\config\\lib\\config.js:182:11)\n' +
+    '    at module.exports (C:\\Users\\cwcha\\book-backend\\startup\\database.js:9:22)\n' +
+    '    at Object.<anonymous> (C:\\Users\\cwcha\\book-backend\\app.js:17:30)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:933:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)\n' +
+    '    at internal/main/run_main_module.js:17:47',
+  timestamp: '2021-08-02 15:55:20'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-02 15:55:50'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-02 15:55:50'
+}
+{
+  level: 'error',
+  message: 'booking is not defined booking is not defined',
+  stack: 'ReferenceError: booking is not defined\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\routes\\restaurants.js:42:5\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n' +
+    '    at async C:\\Users\\cwcha\\book-backend\\middleware\\async.js:7:7',
+  timestamp: '2021-08-02 15:56:10'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-02 15:56:29'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-02 15:56:29'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-02 19:31:41'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-02 19:31:41'
+}
+{
+  level: 'error',
+  message: 'Bookings is not defined Bookings is not defined',
+  stack: 'ReferenceError: Bookings is not defined\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\routes\\bookings.js:114:20\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\middleware\\async.js:7:13\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at param (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:354:14)\n' +
+    '    at param (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:365:14)\n' +
+    '    at Function.process_params (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:410:3)\n' +
+    '    at next (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:284:7',
+  timestamp: '2021-08-02 19:32:42'
+}
+{
+  level: 'error',
+  message: 'Bookings is not defined Bookings is not defined',
+  stack: 'ReferenceError: Bookings is not defined\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\routes\\bookings.js:114:20\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\middleware\\async.js:7:13\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at param (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:354:14)\n' +
+    '    at param (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:365:14)\n' +
+    '    at Function.process_params (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:410:3)\n' +
+    '    at next (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:284:7',
+  timestamp: '2021-08-02 19:33:21'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-02 19:34:05'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-02 19:34:05'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-02 19:36:25'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-02 19:36:26'
+}
+{
+  level: 'error',
+  message: 'time is not defined time is not defined',
+  stack: 'ReferenceError: time is not defined\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\routes\\bookings.js:122:9\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n' +
+    '    at async C:\\Users\\cwcha\\book-backend\\middleware\\async.js:7:7',
+  timestamp: '2021-08-02 19:36:31'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-02 19:37:14'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-02 19:37:15'
+}
+{
+  level: 'error',
+  message: 'time is not defined time is not defined',
+  stack: 'ReferenceError: time is not defined\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\routes\\bookings.js:123:9\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n' +
+    '    at async C:\\Users\\cwcha\\book-backend\\middleware\\async.js:7:7',
+  timestamp: '2021-08-02 19:37:17'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-02 19:39:01'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-02 19:39:01'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-02 19:39:19'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-02 19:39:19'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-02 19:40:07'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-02 19:40:07'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-02 19:42:35'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-02 19:42:35'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-02 19:43:47'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-02 19:43:48'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-02 19:45:35'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-02 19:45:35'
+}
+{
+  level: 'error',
+  message: 'TablesSchedules is not defined TablesSchedules is not defined',
+  stack: 'ReferenceError: TablesSchedules is not defined\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\routes\\tablesschedules.js:73:20\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\middleware\\async.js:7:13\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at param (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:354:14)\n' +
+    '    at param (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:365:14)\n' +
+    '    at Function.process_params (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:410:3)\n' +
+    '    at next (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:284:7',
+  timestamp: '2021-08-02 19:45:41'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-02 19:45:55'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-02 19:45:55'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-02 19:48:59'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-02 19:49:00'
+}

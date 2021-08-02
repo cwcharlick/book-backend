@@ -75,4 +75,14 @@ router.get(
   })
 );
 
+router.get(
+  "/public/:restId",
+  addTryCatch(async (req, res) => {
+    const schedules = await Schedule.find({
+      restaurant: req.params.restId,
+    });
+    res.send(schedules);
+  })
+);
+
 module.exports = router;

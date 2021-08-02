@@ -67,4 +67,14 @@ router.get(
   })
 );
 
+router.get(
+  "/public/:restId",
+  addTryCatch(async (req, res) => {
+    const tables = await TablesSchedule.find({
+      restaurant: req.params.restId,
+    });
+    res.send(tables);
+  })
+);
+
 module.exports = router;

@@ -72,4 +72,14 @@ router.get(
   })
 );
 
+router.get(
+  "/public/:restId",
+  addTryCatch(async (req, res) => {
+    const pacings = await PacingsSchedule.find({
+      restaurant: req.params.restId,
+    });
+    res.send(pacings);
+  })
+);
+
 module.exports = router;

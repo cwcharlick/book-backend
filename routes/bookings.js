@@ -5,7 +5,7 @@ const { Booking, validateBooking } = require("../models/booking.js");
 const express = require("express");
 const router = express.Router();
 const mongoose = require("mongoose");
-
+const _ = require("lodash");
 // ALWAYS NEED TO VALIDATE that the documents being accessed are their own. Maybe include restaurant id in auth...? or a new rest auth and have it in the req header? part of the JWT?
 // Probably "isOwnedByAuthenticated()" method on each of the mongoose schemas, which checks the current jwt.
 
@@ -104,6 +104,33 @@ router.get(
       return res.status(404).send("Booking with the given ID was not found");
 
     res.send(booking);
+  })
+);
+
+router.get(
+  "/public/:restId",
+  addTryCatch(async (req, res) => {
+    const today = new Date().setHours(0, 0, 0, 0);
+    let bookings = await Booking.find({
+      restaurant: req.params.restId,
+      date: { $gte: today },
+      phase: { $lt: 3 },
+    });
+
+    for (let i = 0; bookings.length > i; i++) {
+      console.log(bookings, bookings[i]);
+      bookings[i] = _.pick(bookings[i], [
+        "time",
+        "date",
+        "table",
+        "covers",
+        "usable_end_time",
+        "table_assigned",
+        "phase",
+      ]);
+    }
+
+    res.send(bookings);
   })
 );
 
