@@ -1031,3 +1031,13 @@
   level: 'info',
   timestamp: '2021-08-02 19:49:00'
 }
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-02 20:57:12'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-02 20:57:13'
+}

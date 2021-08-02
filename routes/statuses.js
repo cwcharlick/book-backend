@@ -40,4 +40,14 @@ router.get(
   })
 );
 
+router.get(
+  "/public/:restId",
+  addTryCatch(async (req, res) => {
+    const statuses = await Status.find({
+      restaurant: req.params.restId,
+    });
+    res.send(statuses);
+  })
+);
+
 module.exports = router;
