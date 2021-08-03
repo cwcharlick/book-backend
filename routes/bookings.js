@@ -111,9 +111,13 @@ router.get(
   "/public/:restId",
   addTryCatch(async (req, res) => {
     const today = new Date().setHours(0, 0, 0, 0);
+    let yesterday = new Date(today);
+
+    yesterday.setDate(yesterday.getDate() - 1);
+
     let bookings = await Booking.find({
       restaurant: req.params.restId,
-      date: { $gte: today },
+      date: { $gte: yesterday },
       phase: { $lt: 3 },
     });
 
