@@ -1,26 +1,28 @@
-const Joi = require("joi");
-const mongoose = require("mongoose");
+// // deprecated. commented out for a bit just in case.
 
-const Schema = mongoose.Schema;
-const ObjectId = Schema.ObjectId;
+// const Joi = require("joi");
+// const mongoose = require("mongoose");
 
-const servicesPacingSchema = new Schema({
-  restaurant: { type: ObjectId, ref: "Restaurant", required: true },
-  name: String,
-  services: [{ name: String, time: Number }],
-});
+// const Schema = mongoose.Schema;
+// const ObjectId = Schema.ObjectId;
 
-const ServicesPacing = mongoose.model("ServicesPacing", servicesPacingSchema);
+// const servicesPacingSchema = new Schema({
+//   restaurant: { type: ObjectId, ref: "Restaurant", required: true },
+//   name: String,
+//   services: [{ name: String, time: Number }],
+// });
 
-function validateServicesPacing(servicesPacing) {
-  const schema = Joi.object({
-    restaurant: Joi.objectId(),
-    name: Joi.string(),
-    services: Joi.array(),
-  });
+// const ServicesPacing = mongoose.model("ServicesPacing", servicesPacingSchema);
 
-  return schema.validate(servicesPacing);
-}
+// function validateServicesPacing(servicesPacing) {
+//   const schema = Joi.object({
+//     restaurant: Joi.objectId(),
+//     name: Joi.string(),
+//     services: Joi.array(),
+//   });
 
-module.exports.ServicesPacing = ServicesPacing;
-module.exports.validateServicesPacing = validateServicesPacing;
+//   return schema.validate(servicesPacing);
+// }
+
+// module.exports.ServicesPacing = ServicesPacing;
+// module.exports.validateServicesPacing = validateServicesPacing;

@@ -117,6 +117,25 @@ function validateBooking(booking) {
 
   return schema.validate(booking);
 }
+function validatePublicBooking(booking) {
+  const schema = Joi.object({
+    restaurant: Joi.objectId().required(),
+    time: Joi.number().required(),
+    phone: Joi.number().required(),
+    email: Joi.string().email().required(),
+    name: Joi.string().required(),
+    covers: Joi.number().required(),
+    date: Joi.date().required(),
+    turn_time: Joi.number().required(),
+    statusesId: Joi.objectId().required(),
+    statusId: Joi.objectId().required(),
+    history: Joi.array().required(),
+    usable_end_time: Joi.number().required(),
+  });
+
+  return schema.validate(booking);
+}
 
 module.exports.Booking = Booking;
 module.exports.validateBooking = validateBooking;
+module.exports.validatePublicBooking = validatePublicBooking;

@@ -1,7 +1,11 @@
 const addTryCatch = require("../middleware/async");
 const auth = require("../middleware/auth");
 const superAdmin = require("../middleware/superAdmin");
-const { Booking, validateBooking } = require("../models/booking.js");
+const {
+  Booking,
+  validateBooking,
+  validatePublicBooking,
+} = require("../models/booking.js");
 const express = require("express");
 const router = express.Router();
 const mongoose = require("mongoose");
@@ -138,7 +142,45 @@ router.get(
   })
 );
 
-//update
+// public post route needs some authentication, probably from env variables. Perhaps all public routes do? or cors... or middleware.
+router.post(
+  "/public/",
+  addTryCatch(async (req, res) => {
+    const { error } = validatePublicBooking(req.body);
+    if (error) return res.status(400).send(error.details[0].message);
+
+    const booking = new Booking({
+      restaurant: req.body.restaurant,
+      time: req.body.time,
+      table: [],
+      phone: req.body.phone,
+      email: req.body.email,
+      name: req.body.name,
+      covers: req.body.covers,
+      date: req.body.date,
+      default_turntime: true,
+      turntime: req.body.turn_time,
+      end_time: req.body.usable_end_time,
+      projected_end_time: req.body.usable_end_time,
+      usable_end_time: req.body.usable_end_time,
+      manual_end_time: false,
+      table_assigned: false,
+      statusesId: req.body.statusesId,
+      statusId: req.body.statusId,
+      phase: 1,
+      statusesDefault: true,
+      status_changed: null,
+      description: "Web booking.",
+      tags: [],
+      history: req.body.history,
+    });
+
+    await booking.save();
+
+    res.send(booking);
+  })
+);
+
 router.post(
   "/",
   auth,

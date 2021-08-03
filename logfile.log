@@ -1051,3 +1051,337 @@
   level: 'info',
   timestamp: '2021-08-03 09:30:52'
 }
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-03 16:41:03'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-03 16:41:04'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-03 16:52:25'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-03 16:52:26'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-03 16:52:45'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-03 16:52:45'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-03 16:53:56'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-03 16:53:56'
+}
+{
+  errors: {
+    default_turntime: CastError: Cast to Boolean failed for value "90" (type string) at path "default_turntime"
+        at SchemaBoolean.cast (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\schema\boolean.js:209:11)
+        at SchemaBoolean.SchemaType.applySetters (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\schematype.js:1123:12)
+        at model.$set (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\document.js:1287:20)
+        at model.$set (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\document.js:1036:16)
+        at model.Document (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\document.js:148:12)
+        at model.Model (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\model.js:105:12)
+        at new model (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\model.js:4905:15)
+        at C:\Users\cwcha\book-backend\routes\bookings.js:152:21
+        at C:\Users\cwcha\book-backend\middleware\async.js:7:13
+        at Layer.handle [as handle_request] (C:\Users\cwcha\book-backend\node_modules\express\lib\router\layer.js:95:5)
+        at next (C:\Users\cwcha\book-backend\node_modules\express\lib\router\route.js:137:13)
+        at Route.dispatch (C:\Users\cwcha\book-backend\node_modules\express\lib\router\route.js:112:3)
+        at Layer.handle [as handle_request] (C:\Users\cwcha\book-backend\node_modules\express\lib\router\layer.js:95:5)
+        at C:\Users\cwcha\book-backend\node_modules\express\lib\router\index.js:281:22
+        at Function.process_params (C:\Users\cwcha\book-backend\node_modules\express\lib\router\index.js:335:12)
+        at next (C:\Users\cwcha\book-backend\node_modules\express\lib\router\index.js:275:10) {
+      stringValue: '"90"',
+      messageFormat: undefined,
+      kind: 'Boolean',
+      value: '90',
+      path: 'default_turntime',
+      reason: CastError: Cast to boolean failed for value "90" (type string) at path "undefined"
+          at castBoolean (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\cast\boolean.js:28:9)
+          at SchemaBoolean.cast (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\schema\boolean.js:207:12)
+          at SchemaBoolean.SchemaType.applySetters (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\schematype.js:1123:12)
+          at model.$set (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\document.js:1287:20)
+          at model.$set (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\document.js:1036:16)
+          at model.Document (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\document.js:148:12)
+          at model.Model (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\model.js:105:12)
+          at new model (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\model.js:4905:15)
+          at C:\Users\cwcha\book-backend\routes\bookings.js:152:21
+          at C:\Users\cwcha\book-backend\middleware\async.js:7:13
+          at Layer.handle [as handle_request] (C:\Users\cwcha\book-backend\node_modules\express\lib\router\layer.js:95:5)
+          at next (C:\Users\cwcha\book-backend\node_modules\express\lib\router\route.js:137:13)
+          at Route.dispatch (C:\Users\cwcha\book-backend\node_modules\express\lib\router\route.js:112:3)
+          at Layer.handle [as handle_request] (C:\Users\cwcha\book-backend\node_modules\express\lib\router\layer.js:95:5)
+          at C:\Users\cwcha\book-backend\node_modules\express\lib\router\index.js:281:22
+          at Function.process_params (C:\Users\cwcha\book-backend\node_modules\express\lib\router\index.js:335:12) {
+        stringValue: '"90"',
+        messageFormat: undefined,
+        kind: 'boolean',
+        value: '90',
+        path: undefined,
+        reason: undefined,
+        valueType: 'string'
+      },
+      valueType: 'string'
+    }
+  },
+  _message: 'Booking validation failed',
+  level: 'error',
+  message: 'Booking validation failed: default_turntime: Cast to Boolean failed for value "90" (type string) at path "default_turntime" Booking validation failed: default_turntime: Cast to Boolean failed for value "90" (type string) at path "default_turntime"',
+  stack: 'ValidationError: Booking validation failed: default_turntime: Cast to Boolean failed for value "90" (type string) at path "default_turntime"\n' +
+    '    at model.Document.invalidate (C:\\Users\\cwcha\\book-backend\\node_modules\\mongoose\\lib\\document.js:2760:32)\n' +
+    '    at model.$set (C:\\Users\\cwcha\\book-backend\\node_modules\\mongoose\\lib\\document.js:1327:12)\n' +
+    '    at model.$set (C:\\Users\\cwcha\\book-backend\\node_modules\\mongoose\\lib\\document.js:1036:16)\n' +
+    '    at model.Document (C:\\Users\\cwcha\\book-backend\\node_modules\\mongoose\\lib\\document.js:148:12)\n' +
+    '    at model.Model (C:\\Users\\cwcha\\book-backend\\node_modules\\mongoose\\lib\\model.js:105:12)\n' +
+    '    at new model (C:\\Users\\cwcha\\book-backend\\node_modules\\mongoose\\lib\\model.js:4905:15)\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\routes\\bookings.js:152:21\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\middleware\\async.js:7:13\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  timestamp: '2021-08-03 16:53:59'
+}
+{
+  errors: {
+    default_turntime: CastError: Cast to Boolean failed for value "90" (type string) at path "default_turntime"
+        at SchemaBoolean.cast (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\schema\boolean.js:209:11)
+        at SchemaBoolean.SchemaType.applySetters (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\schematype.js:1123:12)
+        at model.$set (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\document.js:1287:20)
+        at model.$set (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\document.js:1036:16)
+        at model.Document (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\document.js:148:12)
+        at model.Model (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\model.js:105:12)
+        at new model (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\model.js:4905:15)
+        at C:\Users\cwcha\book-backend\routes\bookings.js:152:21
+        at C:\Users\cwcha\book-backend\middleware\async.js:7:13
+        at Layer.handle [as handle_request] (C:\Users\cwcha\book-backend\node_modules\express\lib\router\layer.js:95:5)
+        at next (C:\Users\cwcha\book-backend\node_modules\express\lib\router\route.js:137:13)
+        at Route.dispatch (C:\Users\cwcha\book-backend\node_modules\express\lib\router\route.js:112:3)
+        at Layer.handle [as handle_request] (C:\Users\cwcha\book-backend\node_modules\express\lib\router\layer.js:95:5)
+        at C:\Users\cwcha\book-backend\node_modules\express\lib\router\index.js:281:22
+        at Function.process_params (C:\Users\cwcha\book-backend\node_modules\express\lib\router\index.js:335:12)
+        at next (C:\Users\cwcha\book-backend\node_modules\express\lib\router\index.js:275:10) {
+      stringValue: '"90"',
+      messageFormat: undefined,
+      kind: 'Boolean',
+      value: '90',
+      path: 'default_turntime',
+      reason: CastError: Cast to boolean failed for value "90" (type string) at path "undefined"
+          at castBoolean (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\cast\boolean.js:28:9)
+          at SchemaBoolean.cast (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\schema\boolean.js:207:12)
+          at SchemaBoolean.SchemaType.applySetters (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\schematype.js:1123:12)
+          at model.$set (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\document.js:1287:20)
+          at model.$set (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\document.js:1036:16)
+          at model.Document (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\document.js:148:12)
+          at model.Model (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\model.js:105:12)
+          at new model (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\model.js:4905:15)
+          at C:\Users\cwcha\book-backend\routes\bookings.js:152:21
+          at C:\Users\cwcha\book-backend\middleware\async.js:7:13
+          at Layer.handle [as handle_request] (C:\Users\cwcha\book-backend\node_modules\express\lib\router\layer.js:95:5)
+          at next (C:\Users\cwcha\book-backend\node_modules\express\lib\router\route.js:137:13)
+          at Route.dispatch (C:\Users\cwcha\book-backend\node_modules\express\lib\router\route.js:112:3)
+          at Layer.handle [as handle_request] (C:\Users\cwcha\book-backend\node_modules\express\lib\router\layer.js:95:5)
+          at C:\Users\cwcha\book-backend\node_modules\express\lib\router\index.js:281:22
+          at Function.process_params (C:\Users\cwcha\book-backend\node_modules\express\lib\router\index.js:335:12) {
+        stringValue: '"90"',
+        messageFormat: undefined,
+        kind: 'boolean',
+        value: '90',
+        path: undefined,
+        reason: undefined,
+        valueType: 'string'
+      },
+      valueType: 'string'
+    }
+  },
+  _message: 'Booking validation failed',
+  level: 'error',
+  message: 'Booking validation failed: default_turntime: Cast to Boolean failed for value "90" (type string) at path "default_turntime" Booking validation failed: default_turntime: Cast to Boolean failed for value "90" (type string) at path "default_turntime"',
+  stack: 'ValidationError: Booking validation failed: default_turntime: Cast to Boolean failed for value "90" (type string) at path "default_turntime"\n' +
+    '    at model.Document.invalidate (C:\\Users\\cwcha\\book-backend\\node_modules\\mongoose\\lib\\document.js:2760:32)\n' +
+    '    at model.$set (C:\\Users\\cwcha\\book-backend\\node_modules\\mongoose\\lib\\document.js:1327:12)\n' +
+    '    at model.$set (C:\\Users\\cwcha\\book-backend\\node_modules\\mongoose\\lib\\document.js:1036:16)\n' +
+    '    at model.Document (C:\\Users\\cwcha\\book-backend\\node_modules\\mongoose\\lib\\document.js:148:12)\n' +
+    '    at model.Model (C:\\Users\\cwcha\\book-backend\\node_modules\\mongoose\\lib\\model.js:105:12)\n' +
+    '    at new model (C:\\Users\\cwcha\\book-backend\\node_modules\\mongoose\\lib\\model.js:4905:15)\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\routes\\bookings.js:152:21\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\middleware\\async.js:7:13\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  timestamp: '2021-08-03 16:54:34'
+}
+{
+  errors: {
+    default_turntime: CastError: Cast to Boolean failed for value "90" (type string) at path "default_turntime"
+        at SchemaBoolean.cast (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\schema\boolean.js:209:11)
+        at SchemaBoolean.SchemaType.applySetters (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\schematype.js:1123:12)
+        at model.$set (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\document.js:1287:20)
+        at model.$set (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\document.js:1036:16)
+        at model.Document (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\document.js:148:12)
+        at model.Model (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\model.js:105:12)
+        at new model (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\model.js:4905:15)
+        at C:\Users\cwcha\book-backend\routes\bookings.js:152:21
+        at C:\Users\cwcha\book-backend\middleware\async.js:7:13
+        at Layer.handle [as handle_request] (C:\Users\cwcha\book-backend\node_modules\express\lib\router\layer.js:95:5)
+        at next (C:\Users\cwcha\book-backend\node_modules\express\lib\router\route.js:137:13)
+        at Route.dispatch (C:\Users\cwcha\book-backend\node_modules\express\lib\router\route.js:112:3)
+        at Layer.handle [as handle_request] (C:\Users\cwcha\book-backend\node_modules\express\lib\router\layer.js:95:5)
+        at C:\Users\cwcha\book-backend\node_modules\express\lib\router\index.js:281:22
+        at Function.process_params (C:\Users\cwcha\book-backend\node_modules\express\lib\router\index.js:335:12)
+        at next (C:\Users\cwcha\book-backend\node_modules\express\lib\router\index.js:275:10) {
+      stringValue: '"90"',
+      messageFormat: undefined,
+      kind: 'Boolean',
+      value: '90',
+      path: 'default_turntime',
+      reason: CastError: Cast to boolean failed for value "90" (type string) at path "undefined"
+          at castBoolean (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\cast\boolean.js:28:9)
+          at SchemaBoolean.cast (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\schema\boolean.js:207:12)
+          at SchemaBoolean.SchemaType.applySetters (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\schematype.js:1123:12)
+          at model.$set (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\document.js:1287:20)
+          at model.$set (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\document.js:1036:16)
+          at model.Document (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\document.js:148:12)
+          at model.Model (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\model.js:105:12)
+          at new model (C:\Users\cwcha\book-backend\node_modules\mongoose\lib\model.js:4905:15)
+          at C:\Users\cwcha\book-backend\routes\bookings.js:152:21
+          at C:\Users\cwcha\book-backend\middleware\async.js:7:13
+          at Layer.handle [as handle_request] (C:\Users\cwcha\book-backend\node_modules\express\lib\router\layer.js:95:5)
+          at next (C:\Users\cwcha\book-backend\node_modules\express\lib\router\route.js:137:13)
+          at Route.dispatch (C:\Users\cwcha\book-backend\node_modules\express\lib\router\route.js:112:3)
+          at Layer.handle [as handle_request] (C:\Users\cwcha\book-backend\node_modules\express\lib\router\layer.js:95:5)
+          at C:\Users\cwcha\book-backend\node_modules\express\lib\router\index.js:281:22
+          at Function.process_params (C:\Users\cwcha\book-backend\node_modules\express\lib\router\index.js:335:12) {
+        stringValue: '"90"',
+        messageFormat: undefined,
+        kind: 'boolean',
+        value: '90',
+        path: undefined,
+        reason: undefined,
+        valueType: 'string'
+      },
+      valueType: 'string'
+    }
+  },
+  _message: 'Booking validation failed',
+  level: 'error',
+  message: 'Booking validation failed: default_turntime: Cast to Boolean failed for value "90" (type string) at path "default_turntime" Booking validation failed: default_turntime: Cast to Boolean failed for value "90" (type string) at path "default_turntime"',
+  stack: 'ValidationError: Booking validation failed: default_turntime: Cast to Boolean failed for value "90" (type string) at path "default_turntime"\n' +
+    '    at model.Document.invalidate (C:\\Users\\cwcha\\book-backend\\node_modules\\mongoose\\lib\\document.js:2760:32)\n' +
+    '    at model.$set (C:\\Users\\cwcha\\book-backend\\node_modules\\mongoose\\lib\\document.js:1327:12)\n' +
+    '    at model.$set (C:\\Users\\cwcha\\book-backend\\node_modules\\mongoose\\lib\\document.js:1036:16)\n' +
+    '    at model.Document (C:\\Users\\cwcha\\book-backend\\node_modules\\mongoose\\lib\\document.js:148:12)\n' +
+    '    at model.Model (C:\\Users\\cwcha\\book-backend\\node_modules\\mongoose\\lib\\model.js:105:12)\n' +
+    '    at new model (C:\\Users\\cwcha\\book-backend\\node_modules\\mongoose\\lib\\model.js:4905:15)\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\routes\\bookings.js:152:21\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\middleware\\async.js:7:13\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:174:3)',
+  timestamp: '2021-08-03 16:54:52'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-03 16:54:53'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-03 16:54:53'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-03 16:57:58'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-03 16:57:59'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-03 16:58:09'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-03 16:58:10'
+}
+{
+  level: 'error',
+  message: 'usable_end_time is not defined usable_end_time is not defined',
+  stack: 'ReferenceError: usable_end_time is not defined\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\routes\\bookings.js:164:27\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\middleware\\async.js:7:13\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:317:13)\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:284:7\n' +
+    '    at Function.process_params (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\cwcha\\book-backend\\node_modules\\express\\lib\\router\\index.js:275:10)',
+  timestamp: '2021-08-03 16:58:24'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-03 16:58:58'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-03 16:58:59'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-03 17:01:08'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-03 17:01:09'
+}
