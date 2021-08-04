@@ -2,6 +2,7 @@ const winston = require("winston");
 const express = require("express");
 const app = express();
 const cors = require("cors");
+const { expireListeners } = require("./models/listener.js");
 
 // defining a templating engine to return html markup to the client instead of json. Not really needed for a restful API but I'll use it for the "/" endpoint for quick reference documentation
 app.set("view engine", "pug");
@@ -20,6 +21,7 @@ require("./startup/validation")();
 require("./startup/prod")(app);
 // port to listen on. 3000 is default.
 //winston.error("test");
+const tidyListeners = setInterval(expireListeners, 60000);
 
 const port = process.env.PORT || 5000;
 const server = app.listen(port, () => {

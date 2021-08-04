@@ -6,6 +6,9 @@ const {
   validateBooking,
   validatePublicBooking,
 } = require("../models/booking.js");
+
+const listener = require("../middleware/listener");
+const { updateListeners } = require("../models/listener.js");
 const express = require("express");
 const router = express.Router();
 const mongoose = require("mongoose");
@@ -24,7 +27,7 @@ const _ = require("lodash");
 //update
 router.put(
   "/:id",
-  auth,
+  [auth, listener],
   addTryCatch(async (req, res) => {
     // Optional REFACTOR: change to findByIdAndUpdate so you send 1 instruction to the database instead of 2 (find and save).
 
@@ -77,6 +80,12 @@ router.put(
     // send result
 
     res.send(booking);
+
+    updateListeners(
+      req.user.selectedRestaurant._id,
+      { booking: booking._id },
+      req.listenerId
+    );
   })
 );
 
@@ -178,12 +187,13 @@ router.post(
     await booking.save();
 
     res.send(booking);
+    updateListeners(req.user.selectedRestaurant._id, { booking: booking._id });
   })
 );
 
 router.post(
   "/",
-  auth,
+  [auth, listener],
   addTryCatch(async (req, res) => {
     const { error } = validateBooking(req.body);
     if (error) return res.status(400).send(error.details[0].message);
@@ -217,6 +227,11 @@ router.post(
     await booking.save();
 
     res.send(booking);
+    updateListeners(
+      req.user.selectedRestaurant._id,
+      { booking: booking._id },
+      req.listenerId
+    );
   })
 );
 

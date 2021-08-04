@@ -1385,3 +1385,496 @@
   level: 'info',
   timestamp: '2021-08-03 17:01:09'
 }
+{
+  service: 'user-service',
+  level: 'error',
+  message: 'Configuration property "mongo_uri" is not defined Configuration property "mongo_uri" is not defined',
+  stack: 'Error: Configuration property "mongo_uri" is not defined\n' +
+    '    at Config.get (C:\\Users\\cwcha\\book-backend\\node_modules\\config\\lib\\config.js:182:11)\n' +
+    '    at module.exports (C:\\Users\\cwcha\\book-backend\\startup\\database.js:9:22)\n' +
+    '    at Object.<anonymous> (C:\\Users\\cwcha\\book-backend\\app.js:17:30)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:933:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)\n' +
+    '    at internal/main/run_main_module.js:17:47',
+  timestamp: '2021-08-04 11:55:49'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 11:56:04'
+}
+{
+  service: 'user-service',
+  errno: undefined,
+  code: 'ETIMEOUT',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.ktw8o.mongodb.net',
+  level: 'error',
+  message: 'querySrv ETIMEOUT _mongodb._tcp.cluster0.ktw8o.mongodb.net querySrv ETIMEOUT _mongodb._tcp.cluster0.ktw8o.mongodb.net',
+  stack: 'Error: querySrv ETIMEOUT _mongodb._tcp.cluster0.ktw8o.mongodb.net\n' +
+    '    at QueryReqWrap.onresolve [as oncomplete] (dns.js:203:19)',
+  timestamp: '2021-08-04 11:57:20'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 11:57:55'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 11:57:56'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 11:59:00'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 11:59:00'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 12:00:48'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 12:00:49'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 12:00:55'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 12:00:55'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 12:18:05'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 12:18:05'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 12:18:32'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 12:18:32'
+}
+{
+  level: 'error',
+  message: "Cannot set property 'lastCheckIn' of null Cannot set property 'lastCheckIn' of null",
+  stack: "TypeError: Cannot set property 'lastCheckIn' of null\n" +
+    '    at C:\\Users\\cwcha\\book-backend\\routes\\listeners.js:47:26\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n' +
+    '    at async C:\\Users\\cwcha\\book-backend\\middleware\\async.js:7:7',
+  timestamp: '2021-08-04 12:18:37'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 12:20:30'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 12:20:31'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 14:52:06'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 14:52:06'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:02:54'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:02:54'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:07:42'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:07:42'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:07:44'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:07:44'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:08:01'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:08:01'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:22:14'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:22:14'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:24:02'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:24:03'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:25:33'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:25:34'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:28:49'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:28:49'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:29:51'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:29:52'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:31:40'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:31:41'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:32:42'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:32:42'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:34:16'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:34:16'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:35:08'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:35:08'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:36:09'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:36:10'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:37:00'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:37:00'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:40:31'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:40:32'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:41:27'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:41:28'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:42:27'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:42:27'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:43:00'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:43:00'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:45:00'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:45:00'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:47:07'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:47:08'
+}
+{
+  service: 'user-service',
+  level: 'error',
+  message: 'listener is not defined listener is not defined',
+  stack: 'ReferenceError: listener is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\cwcha\\book-backend\\routes\\listeners.js:39:10)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:933:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:957:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\cwcha\\book-backend\\startup\\routes.js:17:19)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:933:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:957:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\cwcha\\book-backend\\app.js:16:1)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1068:30)',
+  timestamp: '2021-08-04 15:51:47'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:52:06'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:52:07'
+}
+{
+  level: 'error',
+  message: "Cannot set property 'lastCheckIn' of null Cannot set property 'lastCheckIn' of null",
+  stack: "TypeError: Cannot set property 'lastCheckIn' of null\n" +
+    '    at C:\\Users\\cwcha\\book-backend\\routes\\listeners.js:48:26\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n' +
+    '    at async C:\\Users\\cwcha\\book-backend\\middleware\\async.js:7:7',
+  timestamp: '2021-08-04 15:52:13'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:54:05'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:54:05'
+}
+{
+  level: 'error',
+  message: "Cannot set property 'lastCheckIn' of null Cannot set property 'lastCheckIn' of null",
+  stack: "TypeError: Cannot set property 'lastCheckIn' of null\n" +
+    '    at C:\\Users\\cwcha\\book-backend\\routes\\listeners.js:48:26\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n' +
+    '    at async C:\\Users\\cwcha\\book-backend\\middleware\\async.js:7:7',
+  timestamp: '2021-08-04 15:54:06'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:54:33'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:54:34'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:55:11'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:55:11'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:55:45'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:55:47'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:57:56'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:57:57'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:57:59'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:58:00'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 15:58:17'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 15:58:17'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 16:02:29'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 16:02:29'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 16:06:26'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 16:06:26'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 16:08:45'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 16:08:46'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 16:08:52'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 16:08:53'
+}

@@ -14,6 +14,7 @@ const servicesPacings = require("../routes/servicespacings");
 const pacingsSchedules = require("../routes/pacingsschedules");
 const schedules = require("../routes/schedules");
 const pacingOverrides = require("../routes/pacingoverrides");
+const listeners = require("../routes/listeners");
 
 module.exports = function (app) {
   app.use(express.json()); // sets req.body to json object
@@ -36,6 +37,7 @@ module.exports = function (app) {
   app.use("/api/pacingsschedules", pacingsSchedules);
   app.use("/api/schedules", schedules);
   app.use("/api/pacingoverrides", pacingOverrides);
+  app.use("/api/listeners", listeners);
   app.use("/", home);
 
   // catch any 500 errors
