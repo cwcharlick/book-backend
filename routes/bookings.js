@@ -187,7 +187,7 @@ router.post(
     await booking.save();
 
     res.send(booking);
-    updateListeners(req.user.selectedRestaurant._id, { booking: booking._id });
+    updateListeners(req.body.restaurant, { booking: booking._id });
   })
 );
 

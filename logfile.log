@@ -1878,3 +1878,52 @@
   level: 'info',
   timestamp: '2021-08-04 16:08:53'
 }
+{
+  level: 'error',
+  message: "Cannot read property 'selectedRestaurant' of undefined Cannot read property 'selectedRestaurant' of undefined",
+  stack: "TypeError: Cannot read property 'selectedRestaurant' of undefined\n" +
+    '    at C:\\Users\\cwcha\\book-backend\\routes\\bookings.js:190:30\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n' +
+    '    at async C:\\Users\\cwcha\\book-backend\\middleware\\async.js:7:7',
+  timestamp: '2021-08-04 17:06:22'
+}
+{
+  level: 'error',
+  message: "Cannot read property 'selectedRestaurant' of undefined Cannot read property 'selectedRestaurant' of undefined",
+  stack: "TypeError: Cannot read property 'selectedRestaurant' of undefined\n" +
+    '    at C:\\Users\\cwcha\\book-backend\\routes\\bookings.js:190:30\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n' +
+    '    at async C:\\Users\\cwcha\\book-backend\\middleware\\async.js:7:7',
+  timestamp: '2021-08-04 17:06:30'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 17:07:47'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 17:07:48'
+}
+{
+  level: 'error',
+  message: "Cannot read property 'selectedRestaurant' of undefined Cannot read property 'selectedRestaurant' of undefined",
+  stack: "TypeError: Cannot read property 'selectedRestaurant' of undefined\n" +
+    '    at C:\\Users\\cwcha\\book-backend\\routes\\bookings.js:190:30\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n' +
+    '    at async C:\\Users\\cwcha\\book-backend\\middleware\\async.js:7:7',
+  timestamp: '2021-08-04 17:07:50'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2021-08-04 17:09:11'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2021-08-04 17:09:12'
+}

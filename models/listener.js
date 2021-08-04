@@ -35,6 +35,7 @@ async function expireListeners() {
 }
 
 async function updateListeners(restaurant, data, excludeId) {
+  console.log("called");
   if (data.booking) {
     await Listener.updateMany(
       {
