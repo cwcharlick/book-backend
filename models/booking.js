@@ -34,7 +34,7 @@ const bookingSchema = new Schema(
           "Validation error: Manually assigned booking without a specified table.",
       },
     },
-    phone: { type: String, default: "", required: true },
+    phone: { type: String, default: "" },
     email: { type: String, default: "" },
     name: {
       type: String,
@@ -75,6 +75,7 @@ const bookingSchema = new Schema(
       default: [],
       required: true,
     },
+    walkIn: { type: Boolean, default: false },
   },
   {
     toJSON: {
@@ -90,7 +91,7 @@ function validateBooking(booking) {
     restaurant: Joi.objectId(),
     time: Joi.number(),
     table: Joi.array(),
-    phone: Joi.string(),
+    phone: Joi.string().allow(""),
     email: Joi.string().allow(""),
     name: Joi.string().min(3).required(),
     covers: Joi.number(),
@@ -110,6 +111,7 @@ function validateBooking(booking) {
     description: Joi.string().allow(""),
     tags: Joi.array(),
     history: Joi.array(),
+    walkIn: Joi.allow(),
     id: Joi.allow(),
     _id: Joi.allow(),
     __v: Joi.allow(),
