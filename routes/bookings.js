@@ -222,6 +222,7 @@ router.post(
       description: req.body.description,
       tags: req.body.tags,
       history: req.body.history,
+      walkIn: req.body.walkIn,
     });
 
     await booking.save();
