@@ -21,6 +21,8 @@ router.post(
       max: req.body.max,
     });
 
+    PacingOverride.deleteMany({ date: req.body.date, time: req.body.time });
+
     await pacingOverride.save();
 
     res.send(pacingOverride);

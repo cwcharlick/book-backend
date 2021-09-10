@@ -1,4 +1,6 @@
 {
   "mongo_uri": "book_MONGO_URI",
-  "jwtPrivateKey": "book_JWT_PKEY"
+  "jwtPrivateKey": "book_JWT_PKEY",
+  "EMAIL_ADDRESS": "book_EMAIL_ADDRESS",
+  "EMAIL_PASSWORD": "book_EMAIL_PASSWORD"
 }

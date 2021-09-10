@@ -19,6 +19,8 @@ function validatePacingOverride(pacingOverride) {
     date: Joi.date().required(),
     time: Joi.number().required(),
     max: Joi.number().required(),
+    _id: Joi.allow(),
+    __v: Joi.allow(),
   });
 
   return schema.validate(pacingOverride);
