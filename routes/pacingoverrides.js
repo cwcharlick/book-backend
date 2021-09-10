@@ -21,7 +21,10 @@ router.post(
       max: req.body.max,
     });
 
-    PacingOverride.deleteMany({ date: req.body.date, time: req.body.time });
+    const compareDate = new Date(req.body.date);
+    console.log(compareDate);
+
+    PacingOverride.deleteMany({ date: compareDate, time: req.body.time });
 
     await pacingOverride.save();
 
