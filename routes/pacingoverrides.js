@@ -24,7 +24,11 @@ router.post(
     const compareDate = new Date(req.body.date);
     console.log(compareDate);
 
-    PacingOverride.deleteMany({ date: compareDate, time: req.body.time });
+    await PacingOverride.deleteMany({
+      restaurant: req.user.selectedRestaurant._id,
+      date: compareDate,
+      time: req.body.time,
+    });
 
     await pacingOverride.save();
 
