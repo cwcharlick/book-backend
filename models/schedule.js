@@ -29,15 +29,17 @@ function validateSchedule(schedule) {
     startDate: Joi.date().allow(null).required(),
     lastDate: Joi.date().allow(null).required(),
     length: Joi.number().allow(null).required(),
-    days: Joi.array(
-      Joi.object({
-        _id: Joi.allow(),
-        day: Joi.number(),
-        tablesIds: Joi.array().required(),
-        pacingsId: Joi.objectId(),
-        statusesId: Joi.objectId(),
-      })
-    ).required(),
+    days: Joi.array()
+      .items(
+        Joi.object({
+          _id: Joi.allow(),
+          day: Joi.number(),
+          tablesIds: Joi.array().required(),
+          pacingsId: Joi.objectId(),
+          statusesId: Joi.objectId(),
+        })
+      )
+      .required(),
     _id: Joi.allow(),
     __v: Joi.allow(),
   });
