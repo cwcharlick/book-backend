@@ -13,7 +13,7 @@ const scheduleSchema = new Schema({
   days: [
     {
       day: Number,
-      tablesIds: Array,
+      tablesIds: [{ time: Number, tablesId: ObjectId }],
       pacingsId: ObjectId,
       statusesId: ObjectId,
     },
