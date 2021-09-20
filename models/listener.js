@@ -29,7 +29,7 @@ async function expireListeners() {
 
   await Listener.deleteMany({
     lastCheckIn: {
-      $lt: new Date(new Date().getTime() - 240 * 60000).toISOString(),
+      $lt: new Date(new Date().getTime() - 48 * 60 * 60 * 1000).toISOString(),
     },
   });
 }
