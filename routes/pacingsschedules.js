@@ -3,6 +3,7 @@ const {
   PacingsSchedule,
   validatePacingsSchedule,
 } = require("../models/pacingsschedule.js");
+const { updateListeners } = require("../models/listener.js");
 const express = require("express");
 const router = express.Router();
 const addTryCatch = require("../middleware/async");
@@ -27,6 +28,11 @@ router.post(
     await pacingsSchedule.save();
 
     res.send(pacingsSchedule);
+    updateListeners(
+      req.user.selectedRestaurant._id,
+      { refreshRequired: true },
+      req.listenerId
+    );
   })
 );
 
@@ -58,6 +64,11 @@ router.put(
     // send result
 
     res.send(pacingsSchedule);
+    updateListeners(
+      req.user.selectedRestaurant._id,
+      { refreshRequired: true },
+      req.listenerId
+    );
   })
 );
 

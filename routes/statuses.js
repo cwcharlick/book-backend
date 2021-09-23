@@ -1,5 +1,6 @@
 const auth = require("../middleware/auth");
 const { Status, validateStatus } = require("../models/status.js");
+const { updateListeners } = require("../models/listener.js");
 const express = require("express");
 const router = express.Router();
 const addTryCatch = require("../middleware/async");
@@ -24,6 +25,11 @@ router.post(
     await status.save();
 
     res.send(status);
+    updateListeners(
+      req.user.selectedRestaurant._id,
+      { refreshRequired: true },
+      req.listenerId
+    );
   })
 );
 

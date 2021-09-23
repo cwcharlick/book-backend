@@ -3,6 +3,7 @@ const {
   PacingOverride,
   validatePacingOverride,
 } = require("../models/pacingoverride.js");
+const { updateListeners } = require("../models/listener.js");
 const express = require("express");
 const router = express.Router();
 const addTryCatch = require("../middleware/async");
@@ -32,6 +33,11 @@ router.post(
     await pacingOverride.save();
 
     res.send(pacingOverride);
+    updateListeners(
+      req.user.selectedRestaurant._id,
+      { refreshRequired: true },
+      req.listenerId
+    );
   })
 );
 

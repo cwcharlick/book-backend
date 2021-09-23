@@ -1,5 +1,6 @@
 const auth = require("../middleware/auth");
 const { Schedule, validateSchedule } = require("../models/schedule.js");
+const { updateListeners } = require("../models/listener.js");
 const express = require("express");
 const router = express.Router();
 const addTryCatch = require("../middleware/async");
@@ -24,6 +25,11 @@ router.post(
     await schedule.save();
 
     res.send(schedule);
+    updateListeners(
+      req.user.selectedRestaurant._id,
+      { refreshRequired: true },
+      req.listenerId
+    );
   })
 );
 
@@ -59,6 +65,11 @@ router.put(
     // send result
 
     res.send(schedule);
+    updateListeners(
+      req.user.selectedRestaurant._id,
+      { refreshRequired: true },
+      req.listenerId
+    );
   })
 );
 
