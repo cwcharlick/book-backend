@@ -1,0 +1,63 @@
+* [33m5f120d2[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m [Update] listener log out set to 48h
+* [33mf2d4e5a[m [Update] Listener logout set to 4h
+* [33mcfcbc70[m [Update] listener timeout set to 2h
+* [33mb45b241[m [Bugfix] Fix schedule Joi validation
+* [33mc24876f[m [Bugfix] Fix schedule schema in line with tablesIds
+* [33me2c3ebb[m [Feature] Update schedules schema to allow advanced tables
+* [33mfc0597e[m [Bugfix] further pacing override bug fix
+* [33m48de140[m [Bugfix] pacing override compare date fix
+* [33m9d4240e[m[33m ([m[1;33mtag: v1.1.0[m[33m)[m [Feature] Finish post route for pacing override
+* [33m3b6cc53[m[33m ([m[1;33mtag: v1.0.1[m[33m)[m [Bugfix] Assign walkIn from req.body.walkIn for post method.
+* [33m4565fa8[m[33m ([m[1;33mtag: v1.0.0[m[33m)[m [Update] Booking model tweak to allow walk-ins.
+* [33mc9df7fa[m [Bugfix] Public bookings use req.body.restaurant not req.user...
+* [33m7fbd061[m [Bugfix] Untracked files left out of last commit
+* [33m4facaa6[m [Feature] Add Listeners. Authenticated users must now check in periodically (receiving updates in the process) or need to re-authenticate.
+* [33m1d92558[m [Feature] Add /api/bookings/public post method & validation
+* [33mdd123af[m [Bugfix] Fix date shenanigans. Get public bookings gte yesterday, not today.
+* [33mb6dd06f[m [Feature] add /api/statuses/public/ get method. Missed in previous commit.
+* [33md6b740b[m [Feature] Add /api/.../public/:restId get methods for all data needed by the end user booking journey
+* [33m7b1d51d[m [Feature] Add /api/tablesschedules/ put method. Deprecate servicespacings.
+* [33m1866c46[m [Update] allow _id and __v on /api/tablesschedules post method
+* [33mf59a8fc[m [Feature] Add /api/pacingsschedules put route
+* [33m5c58117[m [Feature] Update /api/pacingsschedules post method to deprecate servicespacings
+* [33mc359283[m [Feature] Add route: /api/statuses put method
+* [33mee0e46e[m [Feature] Add phase to booking history
+* [33m59757e1[m [Bugfix] Fix typo in pacingoverrides.js
+* [33mb9748c2[m [Feature] Add /api/pacingoverrides post and get routes
+* [33me98bf71[m [Bugfix] Changed status_changed empty from false to null. False caused validation errors.
+* [33m53d05e3[m [Bugfix] Change last commit's turnTimeTotal to timeLeft...
+* [33m2703752[m [Bugfix] Add turnTimeTotal to Status model.
+* [33mc8e925f[m [Bugfix] Allow additional put booking body params id _id __v, for simplicity.
+* [33m1fb44f7[m [Feature] Open /api/bookings put method
+* [33mfe45878[m [Bugfix] Booking schema update for optional email and description.
+* [33me8e904f[m [Bugfix] Joi allows empty descriptions and emails.
+* [33mb734266[m [Bugfix] Typo in /api/bookings post route. re.body.email -> req.body.email
+* [33m03b7391[m [Bugfix] /api/bookings post doesnt require restaurant _id from body. Retrieves from JWT header.
+* [33m402f58a[m [Bugfix] fix Joi & Schema validation issue. manual_end_time (booking) can be number or false. Will need refactoring in the future.
+* [33m5d74e5f[m [Feature] Opened up /api/bookings/ post method to accept real bookings.
+* [33mc5c6973[m [bugfix] fix 3x import case sensitivity errors in todays [Feature] routes commits
+* [33m46f46aa[m [Feature] Add model + get & post endpoints for Schedules.
+* [33m0bd13ab[m [Feature] Add model + get & post endpoints for PacingsSchedules.
+* [33m303a591[m [Feature] Add model + get & post endpoints for ServicesPacings.
+* [33m6b8a44b[m [Feature] Add model + get & post endpoints for TablesSchedules.
+* [33m04770a4[m [Feature] Add model + get & post endpoints for Statuses.
+* [33m50e324a[m [Feature] Add model + get & post endpoints for Tags.
+* [33m66e5886[m [bugfix] update bookings get routes to work with JWT header selectedRestaurant object rather than id
+* [33m15ad223[m env variables housekeeping before release
+* [33m916024f[m[33m ([m[1;31mheroku/master[m[33m)[m [bugfix] auth/:restId route set selected restaurant to object not just id
+* [33m092896b[m [bugfix] auth/:restId route updated for populated restaurants header in JWT
+* [33md5a3376[m Auth route populate user restaurants
+* [33m82f7f6a[m Fix cors bug
+* [33m0b6afcf[m cors enabled for all routes
+* [33md0350dd[m pug dependancy properly included
+* [33m051d2d2[m Excluded .env!
+* [33m7ca050e[m First commit. Bookings routes.
+* [33m6372cea[m[33m ([m[mrefs/original/refs/remotes/origin/master[m[33m, [m[mrefs/original/refs/heads/master[m[33m)[m env variables housekeeping before release
+* [33m55921f4[m[33m ([m[mrefs/original/refs/remotes/heroku/master[m[33m)[m [bugfix] auth/:restId route set selected restaurant to object not just id
+* [33m3a5ed33[m [bugfix] auth/:restId route updated for populated restaurants header in JWT
+* [33m1b33b20[m Auth route populate user restaurants
+* [33mada15c1[m Fix cors bug
+* [33m6fd9245[m cors enabled for all routes
+* [33me7dc80f[m pug dependancy properly included
+* [33mdea2ce1[m Excluded .env!
+* [33m8ef9041[m First commit. Bookings routes.

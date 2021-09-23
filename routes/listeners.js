@@ -22,6 +22,7 @@ router.post(
       restaurant: req.user.selectedRestaurant._id,
       user: req.user._id,
       lastCheckIn: new Date(),
+      refreshRequired: false,
     });
 
     await listener.save();
@@ -49,6 +50,7 @@ router.get(
     // wipe all the changes, so next checkin it's only new stuff.
 
     listener.bookings = [];
+    listener.refreshRequired = false;
     listener.save();
   })
 );

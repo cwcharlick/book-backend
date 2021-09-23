@@ -9,6 +9,7 @@ const listenerSchema = new Schema({
   user: { type: ObjectId, ref: "User", required: true },
   bookings: [{ type: ObjectId, ref: "Booking" }],
   lastCheckIn: { type: Date, default: new Date() },
+  refreshRequired: { type: Boolean, default: false },
 });
 
 const Listener = mongoose.model("Listener", listenerSchema);
@@ -19,6 +20,7 @@ function validateListener(listener) {
     user: Joi.objectId().required(),
     bookings: Joi.array(),
     lastCheckIn: Joi.allow(),
+    refreshRequired: Joi.boolean(),
   });
 
   return schema.validate(listener);
@@ -46,6 +48,17 @@ async function updateListeners(restaurant, data, excludeId) {
         $push: {
           bookings: data.booking,
         },
+      }
+    );
+  }
+  if (data.refreshRequired) {
+    await Listener.updateMany(
+      {
+        _id: { $ne: excludeId },
+        restaurant: restaurant,
+      },
+      {
+        refreshRequired: true,
       }
     );
   }

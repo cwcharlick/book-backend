@@ -3,6 +3,7 @@ const {
   TablesSchedule,
   validateTablesSchedule,
 } = require("../models/tablesschedule.js");
+const { updateListeners } = require("../models/listener.js");
 const express = require("express");
 const router = express.Router();
 const addTryCatch = require("../middleware/async");
@@ -24,6 +25,11 @@ router.post(
     await tablesSchedule.save();
 
     res.send(tablesSchedule);
+    updateListeners(
+      req.user.selectedRestaurant._id,
+      { refreshRequired: true },
+      req.listenerId
+    );
   })
 );
 
@@ -52,6 +58,11 @@ router.put(
     // send result
 
     res.send(tablesSchedule);
+    updateListeners(
+      req.user.selectedRestaurant._id,
+      { refreshRequired: true },
+      req.listenerId
+    );
   })
 );
 // also probably need router.get("/me") when there is more info in restaurants
