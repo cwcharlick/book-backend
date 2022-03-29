@@ -1,18 +1,18 @@
-const addTryCatch = require("../middleware/async");
-const auth = require("../middleware/auth");
-const superAdmin = require("../middleware/superAdmin");
+const addTryCatch = require('../middleware/async');
+const auth = require('../middleware/auth');
+const superAdmin = require('../middleware/superAdmin');
 const {
   Booking,
   validateBooking,
   validatePublicBooking,
-} = require("../models/booking.js");
+} = require('../models/booking.js');
 
-const listener = require("../middleware/listener");
-const { updateListeners } = require("../models/listener.js");
-const express = require("express");
+const listener = require('../middleware/listener');
+const { updateListeners } = require('../models/listener.js');
+const express = require('express');
 const router = express.Router();
-const mongoose = require("mongoose");
-const _ = require("lodash");
+const mongoose = require('mongoose');
+const _ = require('lodash');
 // ALWAYS NEED TO VALIDATE that the documents being accessed are their own. Maybe include restaurant id in auth...? or a new rest auth and have it in the req header? part of the JWT?
 // Probably "isOwnedByAuthenticated()" method on each of the mongoose schemas, which checks the current jwt.
 
@@ -26,7 +26,7 @@ const _ = require("lodash");
 
 //update
 router.put(
-  "/:id",
+  '/:id',
   [auth, listener],
   addTryCatch(async (req, res) => {
     // Optional REFACTOR: change to findByIdAndUpdate so you send 1 instruction to the database instead of 2 (find and save).
@@ -34,7 +34,7 @@ router.put(
     // Validate route.params.id
 
     if (!mongoose.Types.ObjectId.isValid(req.params.id))
-      return res.status(400).send("Booking Id invalid.");
+      return res.status(400).send('Booking Id invalid.');
 
     // Validate req.body from the client
 
@@ -48,7 +48,7 @@ router.put(
       restaurant: { _id: req.user.selectedRestaurant._id },
     });
     if (!booking)
-      return res.status(404).send("Booking with supplied Id not found");
+      return res.status(404).send('Booking with supplied Id not found');
 
     // update booking
 
@@ -90,11 +90,12 @@ router.put(
 );
 
 router.get(
-  "/",
+  '/',
   auth,
   addTryCatch(async (req, res) => {
     const bookings = await Booking.find({
       restaurant: { _id: req.user.selectedRestaurant._id },
+      date: { $lt: new Date(2022, 03, 01) },
     });
 
     res.send(bookings);
@@ -102,11 +103,11 @@ router.get(
 );
 
 router.get(
-  "/:id",
+  '/:id',
   auth,
   addTryCatch(async (req, res) => {
     if (!mongoose.Types.ObjectId.isValid(req.params.id))
-      return res.status(400).send("Booking Id invalid.");
+      return res.status(400).send('Booking Id invalid.');
 
     const booking = await Booking.findOne({
       _id: req.params.id,
@@ -114,14 +115,14 @@ router.get(
     });
 
     if (!booking)
-      return res.status(404).send("Booking with the given ID was not found");
+      return res.status(404).send('Booking with the given ID was not found');
 
     res.send(booking);
   })
 );
 
 router.get(
-  "/public/:restId",
+  '/public/:restId',
   addTryCatch(async (req, res) => {
     const today = new Date().setHours(0, 0, 0, 0);
     let yesterday = new Date(today);
@@ -137,13 +138,13 @@ router.get(
     for (let i = 0; bookings.length > i; i++) {
       console.log(bookings, bookings[i]);
       bookings[i] = _.pick(bookings[i], [
-        "time",
-        "date",
-        "table",
-        "covers",
-        "usable_end_time",
-        "table_assigned",
-        "phase",
+        'time',
+        'date',
+        'table',
+        'covers',
+        'usable_end_time',
+        'table_assigned',
+        'phase',
       ]);
     }
 
@@ -153,7 +154,7 @@ router.get(
 
 // public post route needs some authentication, probably from env variables. Perhaps all public routes do? or cors... or middleware.
 router.post(
-  "/public/",
+  '/public/',
   addTryCatch(async (req, res) => {
     const { error } = validatePublicBooking(req.body);
     if (error) return res.status(400).send(error.details[0].message);
@@ -179,7 +180,7 @@ router.post(
       phase: 1,
       statusesDefault: true,
       status_changed: null,
-      description: "Web booking.",
+      description: 'Web booking.',
       tags: [],
       history: req.body.history,
     });
@@ -192,7 +193,7 @@ router.post(
 );
 
 router.post(
-  "/",
+  '/',
   [auth, listener],
   addTryCatch(async (req, res) => {
     const { error } = validateBooking(req.body);
@@ -237,17 +238,17 @@ router.post(
 );
 
 router.delete(
-  "/:id",
+  '/:id',
   [auth, superAdmin],
   addTryCatch(async (req, res) => {
     // shouldnt ever delete a booking when you can cancel
     if (!mongoose.Types.ObjectId.isValid(req.params.id))
-      return res.status(400).send("Booking Id invalid.");
+      return res.status(400).send('Booking Id invalid.');
 
     const booking = await Booking.findByIdAndDelete(req.params.id);
 
     if (!booking)
-      res.status(404).send("Booking with the given Id was not found.");
+      res.status(404).send('Booking with the given Id was not found.');
 
     res.send(booking);
   })
