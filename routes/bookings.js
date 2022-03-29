@@ -95,7 +95,7 @@ router.get(
   addTryCatch(async (req, res) => {
     const bookings = await Booking.find({
       restaurant: { _id: req.user.selectedRestaurant._id },
-      date: { $lt: new Date(2022, 03, 01) },
+      date: { $gte: new Date(2022, 03, 03) },
     });
 
     res.send(bookings);
