@@ -88,9 +88,12 @@ router.put(
       req.listenerId
     );
 
+    const initials = booking.initials ? booking.initials : '';
+
     const bookingLog = new BookingLog({
       booking: booking._id,
-      initials: 'cc',
+      restaurant: booking.restaurant,
+      initials: initials,
       value: booking,
     });
     await bookingLog.save();
@@ -200,7 +203,8 @@ router.post(
 
     const bookingLog = new BookingLog({
       booking: booking._id,
-      initials: 'cc',
+      restaurant: booking.restaurant,
+      initials: '',
       value: booking,
     });
     await bookingLog.save();
@@ -250,9 +254,12 @@ router.post(
       req.listenerId
     );
 
+    const initials = booking.initials ? booking.initials : '';
+
     const bookingLog = new BookingLog({
       booking: booking._id,
-      initials: 'cc',
+      restaurant: booking.restaurant,
+      initials: initials,
       value: booking,
     });
     await bookingLog.save();
