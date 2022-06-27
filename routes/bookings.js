@@ -13,6 +13,7 @@ const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
 const _ = require('lodash');
+const { BookingLog } = require('../models/bookingLog');
 // ALWAYS NEED TO VALIDATE that the documents being accessed are their own. Maybe include restaurant id in auth...? or a new rest auth and have it in the req header? part of the JWT?
 // Probably "isOwnedByAuthenticated()" method on each of the mongoose schemas, which checks the current jwt.
 
@@ -86,9 +87,17 @@ router.put(
       { booking: booking._id },
       req.listenerId
     );
+
+    const bookingLog = new BookingLog({
+      booking: booking._id,
+      initials: 'cc',
+      value: booking,
+    });
+    await bookingLog.save();
   })
 );
 
+// date: { $lt: new Date(2022, 03, 01) }
 router.get(
   '/',
   auth,
@@ -188,6 +197,13 @@ router.post(
 
     res.send(booking);
     updateListeners(req.body.restaurant, { booking: booking._id });
+
+    const bookingLog = new BookingLog({
+      booking: booking._id,
+      initials: 'cc',
+      value: booking,
+    });
+    await bookingLog.save();
   })
 );
 
@@ -233,6 +249,13 @@ router.post(
       { booking: booking._id },
       req.listenerId
     );
+
+    const bookingLog = new BookingLog({
+      booking: booking._id,
+      initials: 'cc',
+      value: booking,
+    });
+    await bookingLog.save();
   })
 );
 
