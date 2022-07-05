@@ -1,15 +1,15 @@
-const auth = require("../middleware/auth");
+const auth = require('../middleware/auth');
 const {
   PacingOverride,
   validatePacingOverride,
-} = require("../models/pacingoverride.js");
-const { updateListeners } = require("../models/listener.js");
-const express = require("express");
+} = require('../models/pacingoverride.js');
+const { updateListeners } = require('../models/listener.js');
+const express = require('express');
 const router = express.Router();
-const addTryCatch = require("../middleware/async");
+const addTryCatch = require('../middleware/async');
 
 router.post(
-  "/",
+  '/',
   auth,
   addTryCatch(async (req, res) => {
     const { error } = validatePacingOverride(req.body);
@@ -44,11 +44,21 @@ router.post(
 // also probably need router.get("/me") when there is more info in restaurants
 
 router.get(
-  "/",
+  '/',
   auth,
   addTryCatch(async (req, res) => {
     const pacingOverrides = await PacingOverride.find({
       restaurant: req.user.selectedRestaurant._id,
+    });
+    res.send(pacingOverrides);
+  })
+);
+
+router.get(
+  '/public/:restId',
+  addTryCatch(async (req, res) => {
+    const pacingOverrides = await PacingsOverride.find({
+      restaurant: req.params.restId,
     });
     res.send(pacingOverrides);
   })
