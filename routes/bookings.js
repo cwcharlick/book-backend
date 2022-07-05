@@ -133,7 +133,7 @@ router.get(
 );
 
 router.get(
-  '/public/:restId',
+  '/public/:restId/:date',
   addTryCatch(async (req, res) => {
     //const today = new Date().setHours(0, 0, 0, 0);
     //let yesterday = new Date(today);
