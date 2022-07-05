@@ -57,7 +57,7 @@ router.get(
 router.get(
   '/public/:restId',
   addTryCatch(async (req, res) => {
-    const pacingOverrides = await PacingsOverrides.find({
+    const pacingOverrides = await PacingOverride.find({
       restaurant: req.params.restId,
     });
     res.send(pacingOverrides);
