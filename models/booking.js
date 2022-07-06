@@ -1,24 +1,24 @@
-const Joi = require("joi");
-const mongoose = require("mongoose");
+const Joi = require('joi');
+const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 const ObjectId = Schema.ObjectId;
 
 function toCapitalise(str) {
-  let result = str.toLowerCase().split(" ");
+  let result = str.toLowerCase().split(' ');
 
   for (let i = 0; i < result.length; i++) {
     result[i] = result[i][0].toUpperCase() + result[i].substring(1);
   }
 
-  result = result.join(" ");
+  result = result.join(' ');
 
   return result;
 }
 
 const bookingSchema = new Schema(
   {
-    restaurant: { type: ObjectId, ref: "Restaurant", required: true },
+    restaurant: { type: ObjectId, ref: 'Restaurant', required: true },
     time: { type: Number, minlength: 4, maxlength: 4, required: true },
     table: {
       type: [String],
@@ -31,11 +31,11 @@ const bookingSchema = new Schema(
           );
         },
         message:
-          "Validation error: Manually assigned booking without a specified table.",
+          'Validation error: Manually assigned booking without a specified table.',
       },
     },
-    phone: { type: String, default: "" },
-    email: { type: String, default: "" },
+    phone: { type: String, default: '' },
+    email: { type: String, default: '' },
     name: {
       type: String,
       minlength: 3,
@@ -68,7 +68,7 @@ const bookingSchema = new Schema(
     phase: { type: Number, required: true },
     statusesDefault: { type: Boolean, default: true, required: true },
     status_changed: { type: Date, default: null },
-    description: { type: String, default: "" },
+    description: { type: String, default: '' },
     tags: { type: [ObjectId], default: [], required: true },
     history: {
       type: [{ statusId: ObjectId, date: Date, phase: Number }],
@@ -84,15 +84,15 @@ const bookingSchema = new Schema(
   }
 );
 
-const Booking = mongoose.model("Booking", bookingSchema);
+const Booking = mongoose.model('Booking', bookingSchema);
 
 function validateBooking(booking) {
   const schema = Joi.object({
     restaurant: Joi.objectId(),
     time: Joi.number(),
     table: Joi.array(),
-    phone: Joi.string().allow(""),
-    email: Joi.string().allow(""),
+    phone: Joi.string().allow(''),
+    email: Joi.string().allow(''),
     name: Joi.string().min(3).required(),
     covers: Joi.number(),
     date: Joi.date(),
@@ -108,7 +108,7 @@ function validateBooking(booking) {
     phase: Joi.number(),
     statusesDefault: Joi.boolean(),
     status_changed: Joi.date().allow(null),
-    description: Joi.string().allow(""),
+    description: Joi.string().allow(''),
     tags: Joi.array(),
     history: Joi.array(),
     walkIn: Joi.allow(),
@@ -126,6 +126,7 @@ function validatePublicBooking(booking) {
     phone: Joi.number().required(),
     email: Joi.string().email().required(),
     name: Joi.string().required(),
+    notes: Joi.string().required(),
     covers: Joi.number().required(),
     date: Joi.date().required(),
     turn_time: Joi.number().required(),
