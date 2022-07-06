@@ -126,7 +126,7 @@ function validatePublicBooking(booking) {
     phone: Joi.number().required(),
     email: Joi.string().email().required(),
     name: Joi.string().required(),
-    notes: Joi.string().required(),
+    description: Joi.string().required(),
     covers: Joi.number().required(),
     date: Joi.date().required(),
     turn_time: Joi.number().required(),
