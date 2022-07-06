@@ -15,6 +15,7 @@ const pacingsSchedules = require('../routes/pacingsschedules');
 const schedules = require('../routes/schedules');
 const pacingOverrides = require('../routes/pacingoverrides');
 const listeners = require('../routes/listeners');
+const styles = require('../routes/listeners');
 
 module.exports = function (app) {
   app.use(express.json()); // sets req.body to json object
