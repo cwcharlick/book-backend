@@ -191,7 +191,7 @@ router.post(
       phase: 1,
       statusesDefault: true,
       status_changed: null,
-      description: 'Web booking.',
+      description: req.body.description,
       tags: [],
       history: req.body.history,
     });
