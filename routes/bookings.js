@@ -220,6 +220,7 @@ router.post(
 
     const booking = new Booking({
       restaurant: req.user.selectedRestaurant._id,
+      initials: req.body.initials,
       time: req.body.time,
       table: req.body.table,
       phone: req.body.phone,
@@ -243,7 +244,6 @@ router.post(
       tags: req.body.tags,
       history: req.body.history,
       walkIn: req.body.walkIn,
-      initials: req.body.initials,
     });
 
     await booking.save();

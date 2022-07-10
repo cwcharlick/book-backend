@@ -112,7 +112,7 @@ function validateBooking(booking) {
     tags: Joi.array(),
     history: Joi.array(),
     walkIn: Joi.allow(),
-    initials: Joi.string().allow(null, ''),
+    initials: Joi.string().allow(null).allow(''),
     id: Joi.allow(),
     _id: Joi.allow(),
     __v: Joi.allow(),
