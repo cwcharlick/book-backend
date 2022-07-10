@@ -76,6 +76,7 @@ const bookingSchema = new Schema(
       required: true,
     },
     walkIn: { type: Boolean, default: false },
+    initials: { type: String, default: '' },
   },
   {
     toJSON: {
@@ -87,6 +88,7 @@ const bookingSchema = new Schema(
 const Booking = mongoose.model('Booking', bookingSchema);
 
 function validateBooking(booking) {
+  console.log('hi');
   const schema = Joi.object({
     restaurant: Joi.objectId(),
     time: Joi.number(),
@@ -112,7 +114,7 @@ function validateBooking(booking) {
     tags: Joi.array(),
     history: Joi.array(),
     walkIn: Joi.allow(),
-    initials: Joi.string().allow(null),
+    initials: Joi.string().allow(null, ''),
     id: Joi.allow(),
     _id: Joi.allow(),
     __v: Joi.allow(),

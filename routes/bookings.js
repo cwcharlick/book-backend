@@ -248,6 +248,8 @@ router.post(
 
     await booking.save();
 
+    console.log('h', booking, req.body.initials);
+
     res.send(booking);
     updateListeners(
       req.user.selectedRestaurant._id,
