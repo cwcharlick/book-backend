@@ -105,8 +105,16 @@ router.get(
   '/',
   auth,
   addTryCatch(async (req, res) => {
+    const today = new Date();
+    const lastMonthStart = new Date(
+      today.getFullYear(),
+      today.getMonth() - 1,
+      1
+    );
+
     const bookings = await Booking.find({
       restaurant: { _id: req.user.selectedRestaurant._id },
+      date: { $gte: lastMonthStart },
     });
 
     res.send(bookings);
