@@ -1,12 +1,12 @@
-const nodemailer = require("nodemailer");
-const config = require("config");
-const { ConfirmationEmail } = require("../models/confirmationemail.js");
+const nodemailer = require('nodemailer');
+const config = require('config');
+const { ConfirmationEmail } = require('../models/publicStatus.js');
 
-const EMAIL_ADDRESS = config.get("EMAIL_ADDRESS");
-const EMAIL_PASSWORD = config.get("EMAIL_PASSWORD");
+const EMAIL_ADDRESS = config.get('EMAIL_ADDRESS');
+const EMAIL_PASSWORD = config.get('EMAIL_PASSWORD');
 
 const transporter = nodemailer.createTransport({
-  service: "gmail",
+  service: 'gmail',
   auth: { user: EMAIL_ADDRESS, pass: EMAIL_PASSWORD },
 });
 
@@ -14,23 +14,23 @@ function sendConfirmation(booking) {
   const confirmationEmail = createConfirmationEmail(booking);
   confirmationEmail.populate(restaurant);
   const mailOptions = {
-    from: "no-reply@simplyserve.io",
+    from: 'no-reply@simplyserve.io',
     to: booking.email,
-    subject: "Your booking @ " + booking.restaurant.name,
+    subject: 'Your booking @ ' + booking.restaurant.name,
     html:
-      "<h1>Booking Confirmation</h1><p>Hi " +
+      '<h1>Booking Confirmation</h1><p>Hi ' +
       booking.name +
       ",</p><p>Here's your booking confirmation for " +
       booking.covers +
-      " people at " +
+      ' people at ' +
       booking.time +
-      " on " +
+      ' on ' +
       booking.date +
-      ". If you need to make any alterations please give " +
+      '. If you need to make any alterations please give ' +
       restaurant.name +
       ' a call. If you need to cancel your booking, just <a href="www.simplyserve.io/cancel/' +
       booking._id +
-      "/" +
+      '/' +
       confirmationEmail._id +
       '">click here</a>.',
   };

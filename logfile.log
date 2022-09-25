@@ -2494,3 +2494,308 @@
   level: 'info',
   timestamp: '2022-07-28 14:38:53'
 }
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2022-09-24 21:02:23'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2022-09-24 21:02:23'
+}
+{
+  level: 'error',
+  message: "Cannot read property 'list' of null Cannot read property 'list' of null",
+  stack: "TypeError: Cannot read property 'list' of null\n" +
+    '    at C:\\Users\\cwcha\\book-backend\\routes\\bookings.js:230:27\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n' +
+    '    at async C:\\Users\\cwcha\\book-backend\\middleware\\async.js:7:7',
+  timestamp: '2022-09-24 21:15:50'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2022-09-24 21:20:19'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2022-09-24 21:20:20'
+}
+{
+  level: 'error',
+  message: "Cannot read property 'list' of null Cannot read property 'list' of null",
+  stack: "TypeError: Cannot read property 'list' of null\n" +
+    '    at C:\\Users\\cwcha\\book-backend\\routes\\bookings.js:232:27\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n' +
+    '    at async C:\\Users\\cwcha\\book-backend\\middleware\\async.js:7:7',
+  timestamp: '2022-09-24 21:20:34'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2022-09-24 21:21:37'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2022-09-24 21:21:37'
+}
+{
+  level: 'error',
+  message: "Cannot read property 'list' of null Cannot read property 'list' of null",
+  stack: "TypeError: Cannot read property 'list' of null\n" +
+    '    at C:\\Users\\cwcha\\book-backend\\routes\\bookings.js:232:27\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n' +
+    '    at async C:\\Users\\cwcha\\book-backend\\middleware\\async.js:7:7',
+  timestamp: '2022-09-24 21:21:40'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2022-09-24 21:22:24'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2022-09-24 21:22:25'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2022-09-24 22:53:36'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2022-09-24 22:53:36'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2022-09-25 19:57:49'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2022-09-25 19:57:49'
+}
+{
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. Learn more at\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials l8-20020a5d5268000000b0022a839d053csm12536542wrc.98 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN',
+  level: 'error',
+  message: 'Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials l8-20020a5d5268000000b0022a839d053csm12536542wrc.98 - gsmtp Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials l8-20020a5d5268000000b0022a839d053csm12536542wrc.98 - gsmtp',
+  stack: 'Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials l8-20020a5d5268000000b0022a839d053csm12536542wrc.98 - gsmtp\n' +
+    '    at SMTPConnection._formatError (C:\\Users\\cwcha\\book-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:784:19)\n' +
+    '    at SMTPConnection._actionAUTHComplete (C:\\Users\\cwcha\\book-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:1536:34)\n' +
+    '    at SMTPConnection.<anonymous> (C:\\Users\\cwcha\\book-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:540:26)\n' +
+    '    at SMTPConnection._processResponse (C:\\Users\\cwcha\\book-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:947:20)\n' +
+    '    at SMTPConnection._onData (C:\\Users\\cwcha\\book-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:749:14)\n' +
+    '    at TLSSocket.SMTPConnection._onSocketData (C:\\Users\\cwcha\\book-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:189:44)\n' +
+    '    at TLSSocket.emit (events.js:376:20)\n' +
+    '    at addChunk (internal/streams/readable.js:309:12)\n' +
+    '    at readableAddChunk (internal/streams/readable.js:284:9)\n' +
+    '    at TLSSocket.Readable.push (internal/streams/readable.js:223:10)\n' +
+    '    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)',
+  timestamp: '2022-09-25 19:58:55'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2022-09-25 20:00:34'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2022-09-25 20:00:34'
+}
+{
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. Learn more at\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials ay15-20020a05600c1e0f00b003b341a2cfadsm9125023wmb.17 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN',
+  level: 'error',
+  message: 'Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials ay15-20020a05600c1e0f00b003b341a2cfadsm9125023wmb.17 - gsmtp Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials ay15-20020a05600c1e0f00b003b341a2cfadsm9125023wmb.17 - gsmtp',
+  stack: 'Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials ay15-20020a05600c1e0f00b003b341a2cfadsm9125023wmb.17 - gsmtp\n' +
+    '    at SMTPConnection._formatError (C:\\Users\\cwcha\\book-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:784:19)\n' +
+    '    at SMTPConnection._actionAUTHComplete (C:\\Users\\cwcha\\book-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:1536:34)\n' +
+    '    at SMTPConnection.<anonymous> (C:\\Users\\cwcha\\book-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:540:26)\n' +
+    '    at SMTPConnection._processResponse (C:\\Users\\cwcha\\book-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:947:20)\n' +
+    '    at SMTPConnection._onData (C:\\Users\\cwcha\\book-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:749:14)\n' +
+    '    at TLSSocket.SMTPConnection._onSocketData (C:\\Users\\cwcha\\book-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:189:44)\n' +
+    '    at TLSSocket.emit (events.js:376:20)\n' +
+    '    at addChunk (internal/streams/readable.js:309:12)\n' +
+    '    at readableAddChunk (internal/streams/readable.js:284:9)\n' +
+    '    at TLSSocket.Readable.push (internal/streams/readable.js:223:10)\n' +
+    '    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)',
+  timestamp: '2022-09-25 20:00:44'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2022-09-25 20:01:44'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2022-09-25 20:01:44'
+}
+{
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. Learn more at\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials w10-20020a05600c474a00b003b4ac05a8a4sm10925768wmo.27 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN',
+  level: 'error',
+  message: 'Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials w10-20020a05600c474a00b003b4ac05a8a4sm10925768wmo.27 - gsmtp Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials w10-20020a05600c474a00b003b4ac05a8a4sm10925768wmo.27 - gsmtp',
+  stack: 'Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials w10-20020a05600c474a00b003b4ac05a8a4sm10925768wmo.27 - gsmtp\n' +
+    '    at SMTPConnection._formatError (C:\\Users\\cwcha\\book-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:784:19)\n' +
+    '    at SMTPConnection._actionAUTHComplete (C:\\Users\\cwcha\\book-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:1536:34)\n' +
+    '    at SMTPConnection.<anonymous> (C:\\Users\\cwcha\\book-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:540:26)\n' +
+    '    at SMTPConnection._processResponse (C:\\Users\\cwcha\\book-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:947:20)\n' +
+    '    at SMTPConnection._onData (C:\\Users\\cwcha\\book-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:749:14)\n' +
+    '    at TLSSocket.SMTPConnection._onSocketData (C:\\Users\\cwcha\\book-backend\\node_modules\\nodemailer\\lib\\smtp-connection\\index.js:189:44)\n' +
+    '    at TLSSocket.emit (events.js:376:20)\n' +
+    '    at addChunk (internal/streams/readable.js:309:12)\n' +
+    '    at readableAddChunk (internal/streams/readable.js:284:9)\n' +
+    '    at TLSSocket.Readable.push (internal/streams/readable.js:223:10)\n' +
+    '    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)',
+  timestamp: '2022-09-25 20:01:45'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2022-09-25 20:09:49'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2022-09-25 20:09:49'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2022-09-25 20:27:46'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2022-09-25 20:27:46'
+}
+{
+  level: 'error',
+  message: 'confirmationCode is not defined confirmationCode is not defined',
+  stack: 'ReferenceError: confirmationCode is not defined\n' +
+    '    at C:\\Users\\cwcha\\book-backend\\routes\\bookings.js:344:30\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n' +
+    '    at async C:\\Users\\cwcha\\book-backend\\middleware\\async.js:7:7',
+  timestamp: '2022-09-25 20:28:01'
+}
+{
+  service: 'user-service',
+  level: 'error',
+  message: 'Cannot use import statement outside a module Cannot use import statement outside a module',
+  stack: 'C:\\Users\\cwcha\\book-backend\\routes\\bookings.js:18\n' +
+    "import { v4 as uuidv4 } from 'uuid';\n" +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (internal/modules/cjs/loader.js:984:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1032:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:933:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:957:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\cwcha\\book-backend\\startup\\routes.js:5:18)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:933:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:957:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\cwcha\\book-backend\\app.js:17:1)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1068:30)',
+  timestamp: '2022-09-25 20:40:12'
+}
+{
+  service: 'user-service',
+  level: 'error',
+  message: 'Cannot use import statement outside a module Cannot use import statement outside a module',
+  stack: 'C:\\Users\\cwcha\\book-backend\\routes\\bookings.js:18\n' +
+    "import { v4 as uuidv4 } from 'uuid';\n" +
+    '^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Cannot use import statement outside a module\n' +
+    '    at wrapSafe (internal/modules/cjs/loader.js:984:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1032:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:933:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:957:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\cwcha\\book-backend\\startup\\routes.js:5:18)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:933:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:957:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\cwcha\\book-backend\\app.js:17:1)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1068:30)',
+  timestamp: '2022-09-25 20:40:46'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2022-09-25 20:41:34'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2022-09-25 20:41:35'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2022-09-25 21:06:03'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2022-09-25 21:06:04'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2022-09-25 21:20:39'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2022-09-25 21:20:39'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2022-09-25 21:25:12'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2022-09-25 21:25:12'
+}
