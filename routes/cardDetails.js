@@ -3,7 +3,7 @@ const router = express.Router();
 const addTryCatch = require('../middleware/async');
 
 const config = require('config');
-const STRIPE_SECRET_KEY = config.get('book_STRIPE_SECRET_KEY');
+const STRIPE_SECRET_KEY = config.get('STRIPE_SECRET_KEY');
 const stripe = require('stripe')(STRIPE_SECRET_KEY);
 
 router.get(
