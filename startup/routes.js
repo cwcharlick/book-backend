@@ -9,6 +9,7 @@ const home = require('../routes/home');
 const debug = require('debug')('app:startup:routes');
 const tags = require('../routes/tags');
 const statuses = require('../routes/statuses');
+const cardDetails = require('../routes/cardDetails');
 const tablesSchedules = require('../routes/tablesschedules');
 const servicesPacings = require('../routes/servicespacings');
 const pacingsSchedules = require('../routes/pacingsschedules');
@@ -40,6 +41,7 @@ module.exports = function (app) {
   app.use('/api/pacingoverrides', pacingOverrides);
   app.use('/api/listeners', listeners);
   app.use('/api/styles', styles);
+  app.use('/api/carddetails', cardDetails);
   app.use('/', home);
 
   // catch any 500 errors
