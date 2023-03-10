@@ -2855,3 +2855,46 @@
   level: 'info',
   timestamp: '2022-10-02 12:32:06'
 }
+{
+  service: 'user-service',
+  level: 'error',
+  message: 'Configuration property "EMAIL_ADDRESS" is not defined Configuration property "EMAIL_ADDRESS" is not defined',
+  stack: 'Error: Configuration property "EMAIL_ADDRESS" is not defined\n' +
+    '    at Config.get (C:\\Users\\cwcha\\book-backend\\node_modules\\config\\lib\\config.js:182:11)\n' +
+    '    at Object.<anonymous> (C:\\Users\\cwcha\\book-backend\\routes\\bookings.js:24:30)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:933:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:957:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\cwcha\\book-backend\\startup\\routes.js:5:18)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1068:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1097:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:933:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:774:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:957:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\cwcha\\book-backend\\app.js:17:1)',
+  timestamp: '2023-01-13 11:20:02'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2023-01-13 11:20:49'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2023-01-13 11:20:49'
+}
+{
+  message: 'Listening on port 5000...',
+  level: 'info',
+  timestamp: '2023-01-13 11:30:52'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2023-01-13 11:30:53'
+}
